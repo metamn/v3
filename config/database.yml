@@ -37,6 +37,6 @@ production:
   reconnect: false
   database: v3_production
   pool: 5
-  username: root
+  username: cs
   password:
   socket: /var/run/mysqld/mysqld.sock
