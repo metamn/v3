@@ -14,7 +14,7 @@ development:
   reconnect: false
   database: v3_development
   pool: 5
-  username: root
+  username: cs
   password:
   socket: /var/run/mysqld/mysqld.sock
 
@@ -27,7 +27,7 @@ test:
   reconnect: false
   database: v3_test
   pool: 5
-  username: root
+  username: cs
   password:
   socket: /var/run/mysqld/mysqld.sock
 
