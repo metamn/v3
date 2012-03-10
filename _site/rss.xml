@@ -3,13 +3,13 @@
 
 
   <channel>
-    <title>Smuff V3</title>
+    <title>Smuff</title>
     <link></link>
-    <atom:link href="Smuff V3/rss.xml" rel="self" type="application/rss+xml" />
-    <description></description>
+    <atom:link href="Smuff/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Cadouri pentru destepti</description>
     <language>en-us</language>
-    <pubDate>Fri, 09 Mar 2012 13:19:37 EET</pubDate>
-    <lastBuildDate>Fri, 09 Mar 2012 13:19:37 EET</lastBuildDate>
+    <pubDate>Sat, 10 Mar 2012 11:39:41 EET</pubDate>
+    <lastBuildDate>Sat, 10 Mar 2012 11:39:41 EET</lastBuildDate>
 
     
   </channel> 
