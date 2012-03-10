@@ -1,3 +1,30 @@
 ---
 ---
 
+/* SASS structure: http://37signals.com/svn/posts/3003-css-taking-control-of-the-cascade
+*/
+
+
+/* Typography 
+*/
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
+
+body {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    
+    header {
+      h1 {
+        font-weight: bold;
+        letter-spacing: -4px;
+        font-size: 4em; /* Traditional, overwritten */
+      }
+    }
+  }
+}
