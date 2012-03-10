@@ -51,6 +51,3 @@ body .container {
   body .container #content #sidebar {
     width: 33%;
     float: left; }
-  body .container #content #body {
-    width: 66%;
-    float: left; }

@@ -8,13 +8,9 @@
     {% include header.html %}   
         
     <div id="content">
-      <aside id="sidebar">
-        {% include navigation.html %}
-        {% include search.html %}
-      </aside>
-      <div id="body">
-        {{ content }}
-      </div>
+      {% include sidebar.html %}
+   
+      {{ content }}
     </div>  
     <div class="clear"></div>
     
