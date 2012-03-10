@@ -4,6 +4,9 @@
 /* SASS structure: http://37signals.com/svn/posts/3003-css-taking-control-of-the-cascade
 */
 
+@import "assets/mixins";
+
+
 
 /* Typography 
 */
@@ -12,19 +15,43 @@ body {
 }
 
 
-
-
 body {
   .container {
     width: 90%;
     margin: 0 auto;
     
     header {
-      h1 {
-        font-weight: bold;
-        letter-spacing: -4px;
-        font-size: 4em; /* Traditional, overwritten */
+      @include block;
+      hgroup {
+        @include col(33%);
+        h1 {
+          @include smuff-font;
+          font-size: 4em; /* Traditional, overwritten */
+        }
+      }
+      #search {
+        @include col(33%);
+      }
+      #menu {
+        @include block;
+        @include col(33%);
+        #cart {
+          @include col(50%);
+          ul {
+           @include ul-barebones; 
+          }
+        }
+        #information {
+          @include col(50%);
+          ul {
+           @include ul-barebones; 
+          }
+        }
       }
     }
   }
 }
+
+
+
+
