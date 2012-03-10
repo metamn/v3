@@ -48,3 +48,9 @@ body .container {
         body .container header #menu #information ul {
           list-style: none;
           margin: 0; }
+  body .container #content #sidebar {
+    width: 33%;
+    float: left; }
+  body .container #content #body {
+    width: 66%;
+    float: left; }

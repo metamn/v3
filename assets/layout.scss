@@ -49,6 +49,15 @@ body {
         }
       }
     }
+    
+    #content {
+      #sidebar {
+        @include col(33%);
+      }
+      #body {
+        @include col(66%);
+      }
+    }
   }
 }
 

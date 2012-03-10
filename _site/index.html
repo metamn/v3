@@ -30,13 +30,13 @@
     <header>  
   <hgroup id="logo">
     <h1>Smuff</h1>
-    <h2>Cadouri destepti. Pentru tot anul.</h2>
+    <p>Cadouri destepti. Pentru tot anul.</p><!-- it doesn't makes sense to <h2> for the Document outliner -->
   </hgroup>
   
-  <aside id="search">
+  <div id="search">
   <h2>Cautare</h2>
   <input type="text"></input>
-</aside>
+</div>
 
   
   <div id="menu">
@@ -66,7 +66,8 @@
    
         
     <div id="content">
-      <nav id="products">
+      <aside id="sidebar">
+        <nav id="products">
   <h2>Cadouri</h2>
   <ul>
     <li><a href="/">Gadgeturi</a></li>
@@ -125,19 +126,22 @@
 </nav>
 
 
-      <aside id="search">
+        <div id="search">
   <h2>Cautare</h2>
   <input type="text"></input>
-</aside>
+</div>
 
-     
-      <h1>Test header foarte foarte lung</h1>
+      </aside>
+      <div id="body">
+        <h1>Startpage goes here ...</h1>
 
+      </div>
     </div>  
+    <div class="clear"></div>
     
     <footer>
   <h2></h2>
-  <p></p>
+  <p>footer goes here</p>
 </footer>
 
   </div>

@@ -8,11 +8,15 @@
     {% include header.html %}   
         
     <div id="content">
-      {% include navigation.html %}
-      {% include search.html %}
-     
-      {{ content }}
+      <aside id="sidebar">
+        {% include navigation.html %}
+        {% include search.html %}
+      </aside>
+      <div id="body">
+        {{ content }}
+      </div>
     </div>  
+    <div class="clear"></div>
     
     {% include footer.html %}
   </div>
