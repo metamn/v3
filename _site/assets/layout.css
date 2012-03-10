@@ -27,7 +27,8 @@ body .container {
         font-weight: bold;
         letter-spacing: -4px;
         font-size: 4em;
-        /* Traditional, overwritten */ }
+        /* Traditional, overwritten */
+        padding: 0; }
     body .container header #search {
       width: 33%;
       float: left; }

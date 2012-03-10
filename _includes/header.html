@@ -1,7 +1,9 @@
 <header>  
   <hgroup id="logo">
-    <h1>{{ site.title }}</h1>
-    <p>{{ site.strapline }}</p><!-- it doesn't makes sense to <h2> for the Document outliner -->
+    <a href="/"><img src="/assets/smuff-logo.png"></a>
+    <a href="/"><h1>{{ site.title }}</h1></a>
+    <a href="/despre-noi"><p>{{ site.strapline }}</p></a>
+    <!-- it doesn't makes sense to use <h2> for the HTML5 Document Outliner -->
   </hgroup>
   
   {% include search.html %}

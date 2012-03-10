@@ -27,6 +27,8 @@ body {
         h1 {
           @include smuff-font;
           font-size: 4em; /* Traditional, overwritten */
+          padding: 0;
+          
         }
       }
       #search {
