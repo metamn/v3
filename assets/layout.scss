@@ -74,13 +74,13 @@ body {
   margin-bottom: 5em;
   
   #info {
-    @include col(20%);
+    @include col(27%);
     ul#shopping-info {
       @include ul-barebones; 
     }
   }
   #image {
-    @include col(80%);
+    @include col(73%);
   }
 }
 
