@@ -57,17 +57,30 @@ body .container {
 
 /* Product
 */
-#product {
+#product.list {
   width: 66%;
   float: left;
   float: right;
-  margin-bottom: 5em; }
-  #product #info {
+  margin-bottom: 10em; }
+  #product.list #info {
     width: 27%;
     float: left; }
-    #product #info ul#shopping-info {
+    #product.list #info ul#shopping-info {
       list-style: none;
       margin: 0; }
-  #product #image {
+  #product.list #image {
     width: 73%;
     float: left; }
+
+#product.grid {
+  width: 22%;
+  float: left;
+  float: right;
+  height: 27em; }
+  #product.grid #info {
+    padding: 0 1.25em; }
+    #product.grid #info ul#shopping-info {
+      list-style: none;
+      margin: 0; }
+  #product.grid #image {
+    padding: 0 1.25em; }

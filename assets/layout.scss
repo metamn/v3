@@ -68,10 +68,10 @@ body {
 /* Product
 */
 
-#product {
+#product.list {
   @include col(66%);
   float: right;
-  margin-bottom: 5em;
+  margin-bottom: 10em;
   
   #info {
     @include col(27%);
@@ -81,6 +81,23 @@ body {
   }
   #image {
     @include col(73%);
+  }
+}
+
+#product.grid {
+  @include col(22%);
+  float: right;
+  
+  height: 27em;
+  
+  #info {
+    padding: 0 1.25em;
+    ul#shopping-info {
+      @include ul-barebones; 
+    }
+  }
+  #image {
+    padding: 0 1.25em;
   }
 }
 
