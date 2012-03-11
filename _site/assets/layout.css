@@ -74,14 +74,14 @@ body .container {
           margin: 0;
           display: none; }
   body .container #content #sidebar-left {
-    width: 15%;
+    width: 10%;
     float: left;
     margin-top: .625em; }
     body .container #content #sidebar-left ul {
       list-style: none;
       margin: 0; }
   body .container #content #sidebar-right {
-    width: 15%;
+    width: 10%;
     float: left;
     margin-top: .625em;
     float: right; }
@@ -89,8 +89,10 @@ body .container {
       list-style: none;
       margin: 0; }
   body .container #content #body {
-    width: 70%;
+    width: 80%;
     float: left; }
+    body .container #content #body h1.first {
+      margin-left: 2.5em; }
 
 /* Product
 */
@@ -115,7 +117,8 @@ body .container {
   float: left;
   height: 27em; }
   #product.grid #info {
-    padding: 0 1.25em; }
+    padding: 0 1.25em;
+    text-align: center; }
     #product.grid #info ul#shopping-info {
       list-style: none;
       margin: 0; }

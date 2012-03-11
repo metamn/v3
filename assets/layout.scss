@@ -81,14 +81,14 @@ body {
     
     #content {
       #sidebar-left {
-        @include col(15%);
+        @include col(10%);
         margin-top: .625em;
         ul {
           @include ul-barebones; 
         }
       }
       #sidebar-right {
-        @include col(15%);
+        @include col(10%);
         margin-top: .625em;
         float: right;
         ul {
@@ -96,8 +96,10 @@ body {
         }
       }
       #body {
-        @include col(70%);
-      
+        @include col(80%);
+        h1.first {
+          margin-left: 2.5em;
+        }
       }
     }
   }
@@ -131,6 +133,7 @@ body {
   
   #info {
     padding: 0 1.25em;
+    text-align: center;
     ul#shopping-info {
       @include ul-barebones; 
     }
