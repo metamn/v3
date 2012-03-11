@@ -8,9 +8,18 @@
     <atom:link href="Smuff/rss.xml" rel="self" type="application/rss+xml" />
     <description>Cadouri premium. Pentru tot anul.</description>
     <language>en-us</language>
-    <pubDate>Sat, 10 Mar 2012 20:58:47 EET</pubDate>
-    <lastBuildDate>Sat, 10 Mar 2012 20:58:47 EET</lastBuildDate>
+    <pubDate>Sun, 11 Mar 2012 17:44:18 EET</pubDate>
+    <lastBuildDate>Sun, 11 Mar 2012 17:44:18 EET</lastBuildDate>
 
+    
+    <item>
+      <title>Baby Monitor</title>
+      <link>/2012/03/10/baby-monitor.html</link>
+      <pubDate>Sat, 10 Mar 2012 00:00:00 EET</pubDate>
+      <author></author>
+      <guid>/2012/03/10/baby-monitor</guid>
+      <description>Liquid error: undefined method `gsub' for nil:NilClass</description>
+    </item>
     
   </channel> 
 </rss>

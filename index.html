@@ -2,4 +2,8 @@
 layout: default
 ---
 
-<h1>Recommended products ...</h1>
+<h1>Nou!</h1>
+
+{% for post in site.posts limit:10 %}
+  {% include product.html %}
+{% endfor %}
