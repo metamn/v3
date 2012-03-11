@@ -1,13 +1,23 @@
 /* SASS structure: http://37signals.com/svn/posts/3003-css-taking-control-of-the-cascade
 */
+/* Typography
+================= 
+*/
 /* Transform the current font, make it Smuff style
 */
 /* Transform H1, H2, ..., all headings needed for Document Outline
 */
 /* Columns / Grid
+=================
+  
   - width: the width of the column in percentage
 */
+/* Other
+==================
+*/
 /* A barebones list
+*/
+/* Navigation list 
 */
 /* Block
 */
@@ -47,7 +57,8 @@ body .container {
       width: 22%;
       float: left; }
       body .container header #search h2 {
-        font-size: 100%; }
+        font-size: 100%;
+        cursor: pointer; }
       body .container header #search #searchform {
         display: none; }
     body .container header #menu {
@@ -59,7 +70,8 @@ body .container {
         width: 50%;
         float: left; }
         body .container header #menu #cart h2 {
-          font-size: 100%; }
+          font-size: 100%;
+          cursor: pointer; }
         body .container header #menu #cart ul {
           list-style: none;
           margin: 0;
@@ -68,7 +80,8 @@ body .container {
         width: 50%;
         float: left; }
         body .container header #menu #information h2 {
-          font-size: 100%; }
+          font-size: 100%;
+          cursor: pointer; }
         body .container header #menu #information ul {
           list-style: none;
           margin: 0;
@@ -79,7 +92,12 @@ body .container {
     margin-top: .625em; }
     body .container #content #sidebar-left ul {
       list-style: none;
-      margin: 0; }
+      margin: 0;
+      font-size: smaller; }
+      body .container #content #sidebar-left ul li {
+        margin-bottom: .625em;
+        border-width: 0 0 1px 0;
+        border-style: inset; }
   body .container #content #sidebar-right {
     width: 10%;
     float: left;
@@ -87,7 +105,12 @@ body .container {
     float: right; }
     body .container #content #sidebar-right ul {
       list-style: none;
-      margin: 0; }
+      margin: 0;
+      font-size: smaller; }
+      body .container #content #sidebar-right ul li {
+        margin-bottom: .625em;
+        border-width: 0 0 1px 0;
+        border-style: inset; }
   body .container #content #body {
     width: 80%;
     float: left; }

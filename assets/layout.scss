@@ -48,6 +48,7 @@ body {
         @include col(22%);
         h2 {
           @include normal-font;
+          cursor: pointer;
         }
         #searchform {
           display: none;
@@ -60,6 +61,7 @@ body {
           @include col(50%);
           h2 {
             @include normal-font;
+            cursor: pointer;
           }
           ul {
            @include ul-barebones; 
@@ -70,6 +72,7 @@ body {
           @include col(50%);
           h2 {
             @include normal-font;
+            cursor: pointer;
           }
           ul {
             @include ul-barebones; 
@@ -84,7 +87,7 @@ body {
         @include col(10%);
         margin-top: .625em;
         ul {
-          @include ul-barebones; 
+          @include ul-navigation; 
         }
       }
       #sidebar-right {
@@ -92,7 +95,7 @@ body {
         margin-top: .625em;
         float: right;
         ul {
-          @include ul-barebones; 
+          @include ul-navigation; 
         }
       }
       #body {

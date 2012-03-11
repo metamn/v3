@@ -2,10 +2,10 @@ jQuery.noConflict();
 
 jQuery(document).ready(function(){
   
-  jQuery(".people-badge-name").click(function() {
-    var id = jQuery(this).attr('rel');
-    var badge = "." + id;
-    jQuery(badge).slideToggle();
+  
+  // Show Search, Cart, Information on click
+  jQuery("header h2").click(function() {
+    jQuery(this).next().slideToggle();
   });
   
     

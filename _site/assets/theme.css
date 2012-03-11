@@ -1,3 +1,14 @@
 #logo a, #logo a:visited {
   color: black;
   text-decoration: none; }
+
+nav ul li {
+  border-color: #e6e6e6; }
+  nav ul li a {
+    color: #666666;
+    text-decoration: none; }
+  nav ul li a:visited {
+    color: gray; }
+  nav ul li a:hover {
+    color: #1a1a1a;
+    text-decoration: none; }

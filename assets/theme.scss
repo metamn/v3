@@ -2,8 +2,31 @@
 ---
 
 $black: #000;
+$grey: #666;
+
 
 #logo a, #logo a:visited {
   color: $black;
   text-decoration: none;
 }
+
+nav {
+  ul {
+    li {
+      border-color: lighten($grey, 50%);
+      
+      a {
+        color: $grey;
+        text-decoration: none;
+      }
+      a:visited {
+        color: lighten($grey, 10%);
+      }
+      a:hover {
+        color: darken($grey, 30%);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
