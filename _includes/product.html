@@ -1,5 +1,12 @@
 <article id="product">
-  <h2>{{ post.title }}</h2>
+  <div id="info">
+    <h2>{{ post.title }}</h2>
+    <ul id="shopping-info">
+      <li id="price">{{ post.price }} RON</a>
+      <li id="delivery">Livrare: {{ post.delivery }} zile</a>
+      <li id="add-to-cart">Adauga la cos</li>
+    </ul>
+  </div>
   <div id="image">
     <img src="{{ post.images[0] }}" />
   </div>

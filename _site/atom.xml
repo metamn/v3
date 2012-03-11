@@ -4,7 +4,7 @@
 	<title type="text" xml:lang="en">Smuff. Cadouri premium. Pentru tot anul.</title>
 	<link type="application/atom+xml" href="/feed/" rel="self"/>
  	<link type="text" href="" rel="alternate"/>
-	<updated>2012-03-11T17:44:18+02:00</updated>
+	<updated>2012-03-11T18:18:04+02:00</updated>
 	<id></id>
 	<author>
 		<name>Smuff</name>
@@ -17,6 +17,78 @@
 		<link href="/2012/03/10/baby-monitor.html"/>
 		<updated>2012-03-10T00:00:00+02:00</updated>
 		<id>http:///2012/03/10/baby-monitor</id>
+		<content type="html">Liquid error: undefined method `gsub' for nil:NilClass</content>
+	</entry>
+	
+	<entry>
+		<title>Maxim Jug</title>
+		<link href="/2012/03/09/maxim-jug.html"/>
+		<updated>2012-03-09T00:00:00+02:00</updated>
+		<id>http:///2012/03/09/maxim-jug</id>
+		<content type="html">Liquid error: undefined method `gsub' for nil:NilClass</content>
+	</entry>
+	
+	<entry>
+		<title>Laserpod Original Galaxy</title>
+		<link href="/2012/03/08/laserpod-original-galaxy.html"/>
+		<updated>2012-03-08T00:00:00+02:00</updated>
+		<id>http:///2012/03/08/laserpod-original-galaxy</id>
+		<content type="html">Liquid error: undefined method `gsub' for nil:NilClass</content>
+	</entry>
+	
+	<entry>
+		<title>Backstage Auto Ipod2</title>
+		<link href="/2012/03/07/backstage-auto-ipod2.html"/>
+		<updated>2012-03-07T00:00:00+02:00</updated>
+		<id>http:///2012/03/07/backstage-auto-ipod2</id>
+		<content type="html">Liquid error: undefined method `gsub' for nil:NilClass</content>
+	</entry>
+	
+	<entry>
+		<title>Magisso Taietor Pentru Tort</title>
+		<link href="/2012/03/06/magisso-taietor-pentru-tort.html"/>
+		<updated>2012-03-06T00:00:00+02:00</updated>
+		<id>http:///2012/03/06/magisso-taietor-pentru-tort</id>
+		<content type="html">Liquid error: undefined method `gsub' for nil:NilClass</content>
+	</entry>
+	
+	<entry>
+		<title>3m Xc2</title>
+		<link href="/2012/03/05/3m-xc2.html"/>
+		<updated>2012-03-05T00:00:00+02:00</updated>
+		<id>http:///2012/03/05/3m-xc2</id>
+		<content type="html">Liquid error: undefined method `gsub' for nil:NilClass</content>
+	</entry>
+	
+	<entry>
+		<title>Cub Animat Cu Leduri</title>
+		<link href="/2012/03/04/cub-animat-cu-leduri.html"/>
+		<updated>2012-03-04T00:00:00+02:00</updated>
+		<id>http:///2012/03/04/cub-animat-cu-leduri</id>
+		<content type="html">Liquid error: undefined method `gsub' for nil:NilClass</content>
+	</entry>
+	
+	<entry>
+		<title>Turning Disk</title>
+		<link href="/2012/03/03/turning-disk.html"/>
+		<updated>2012-03-03T00:00:00+02:00</updated>
+		<id>http:///2012/03/03/turning-disk</id>
+		<content type="html">Liquid error: undefined method `gsub' for nil:NilClass</content>
+	</entry>
+	
+	<entry>
+		<title>Spinning Wheel</title>
+		<link href="/2012/03/03/spinning-wheel.html"/>
+		<updated>2012-03-03T00:00:00+02:00</updated>
+		<id>http:///2012/03/03/spinning-wheel</id>
+		<content type="html">Liquid error: undefined method `gsub' for nil:NilClass</content>
+	</entry>
+	
+	<entry>
+		<title>Grippy Pad</title>
+		<link href="/2012/03/03/grippy-pad.html"/>
+		<updated>2012-03-03T00:00:00+02:00</updated>
+		<id>http:///2012/03/03/grippy-pad</id>
 		<content type="html">Liquid error: undefined method `gsub' for nil:NilClass</content>
 	</entry>
 	

@@ -15,6 +15,9 @@ body {
 }
 
 
+/* Startpage 
+*/
+
 body {
   .container {
     width: 90%;
@@ -62,5 +65,22 @@ body {
 }
 
 
+/* Product
+*/
 
+#product {
+  @include col(66%);
+  float: right;
+  margin-bottom: 5em;
+  
+  #info {
+    @include col(20%);
+    ul#shopping-info {
+      @include ul-barebones; 
+    }
+  }
+  #image {
+    @include col(80%);
+  }
+}
 

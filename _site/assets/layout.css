@@ -14,6 +14,8 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
+/* Startpage 
+*/
 body .container {
   width: 90%;
   margin: 0 auto; }
@@ -51,4 +53,21 @@ body .container {
           margin: 0; }
   body .container #content #sidebar {
     width: 33%;
+    float: left; }
+
+/* Product
+*/
+#product {
+  width: 66%;
+  float: left;
+  float: right;
+  margin-bottom: 5em; }
+  #product #info {
+    width: 20%;
+    float: left; }
+    #product #info ul#shopping-info {
+      list-style: none;
+      margin: 0; }
+  #product #image {
+    width: 80%;
     float: left; }
