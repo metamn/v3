@@ -8,9 +8,13 @@
     {% include header.html %}   
         
     <div id="content">
-      {% include sidebar.html %}
+      {% include sidebar-left.html %}
+      {% include sidebar-right.html %}
    
-      {{ content }}
+      <div id="body">
+        {{ content }}
+      </div>
+      
     </div>  
     <div class="clear"></div>
     

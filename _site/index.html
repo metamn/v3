@@ -29,15 +29,17 @@
   <div class="container">
     <header>  
   <hgroup id="logo">
-    <a href="/"><img src="/assets/smuff-logo.png"></a>
-    <a href="/"><h1>Smuff</h1></a>
-    <a href="/despre-noi"><p>Cadouri premium. Pentru tot anul.</p></a>
+    <div id="image"><a href="/"><img src="/assets/smuff-logo.png"></a></div>
+    <div id="title"><a href="/"><h1>Smuff</h1></a></div>
+    <div id="strapline"><a href="/despre-noi"><p>Cadouri premium. Pentru tot anul.</p></a></div>
     <!-- it doesn't makes sense to use <h2> for the HTML5 Document Outliner -->
   </hgroup>
   
   <div id="search">
   <h2>Cautare</h2>
-  <input type="text"></input>
+  <form id="searchform">
+    <input type="text"></input>
+  </form>
 </div>
 
   
@@ -68,7 +70,7 @@
    
         
     <div id="content">
-      <nav id="sidebar">
+      <nav id="sidebar-left">
   
   <h2>Cadouri</h2>
   <ul>
@@ -121,15 +123,30 @@
   
   <div id="search">
   <h2>Cautare</h2>
-  <input type="text"></input>
+  <form id="searchform">
+    <input type="text"></input>
+  </form>
 </div>
 
 
 </nav>
 
 
+      <nav id="sidebar-right">
+  <h2>Navigare</h2>
+  <ul>
+    <li><a href="/">Cadouri noi in magazin</a></li>
+    <li><a href="/">Bestsellers</a></li>
+    <li><a href="/">Promotii</a></li>
+    <li><a href="/">Recomandari speciale pentru tine</a></li>
+    <li><a href="/">Vezi toate produsele</a></li>
+  </ul>
+</nav>
+
+
    
-      <h1>Cadouri noi in magazin // grid view </h1>
+      <div id="body">
+        <h1>Cadouri noi in magazin // grid view </h1>
 
 
 
@@ -138,12 +155,14 @@
     <img src="http://www.smuff.ro/wp-content/uploads/2012/03/smart-baby-monitor-wireless-iphone.jpg" />
   </div>
   <div id="info">
-    <h2>Baby Monitor</h2>
-    <ul id="shopping-info">
-      <li id="price">1485 RON</a>
-      <li id="delivery">Livrare: 1-2 zile</a>
-      <li id="add-to-cart">Adauga la cos</li>
-    </ul>
+    <div id="inner">
+      <h2>Baby Monitor</h2>
+      <ul id="shopping-info">
+        <li id="price">1485 RON</a>
+        <li id="delivery">Livrare: 1-2 zile</a>
+        <li id="add-to-cart">Adauga la cos</li>
+      </ul>
+    </div>
   </div>
 </article>
 
@@ -153,12 +172,14 @@
     <img src="http://www.smuff.ro/wp-content/uploads/2012/03/maxim-jug-scale-masuratoare-bucatarie-cadouri-smuff.jpg" />
   </div>
   <div id="info">
-    <h2>Maxim Jug</h2>
-    <ul id="shopping-info">
-      <li id="price">89 RON</a>
-      <li id="delivery">Livrare: 1-2 zile</a>
-      <li id="add-to-cart">Adauga la cos</li>
-    </ul>
+    <div id="inner">
+      <h2>Maxim Jug</h2>
+      <ul id="shopping-info">
+        <li id="price">89 RON</a>
+        <li id="delivery">Livrare: 1-2 zile</a>
+        <li id="add-to-cart">Adauga la cos</li>
+      </ul>
+    </div>
   </div>
 </article>
 
@@ -168,12 +189,14 @@
     <img src="http://www.smuff.ro/wp-content/uploads/2012/03/LaserPod-Original-Galaxy-smuff-magazin-cadouri-gadget.jpg" />
   </div>
   <div id="info">
-    <h2>Laserpod Original Galaxy</h2>
-    <ul id="shopping-info">
-      <li id="price">113 RON</a>
-      <li id="delivery">Livrare: 5-7 zile</a>
-      <li id="add-to-cart">Adauga la cos</li>
-    </ul>
+    <div id="inner">
+      <h2>Laserpod Original Galaxy</h2>
+      <ul id="shopping-info">
+        <li id="price">113 RON</a>
+        <li id="delivery">Livrare: 5-7 zile</a>
+        <li id="add-to-cart">Adauga la cos</li>
+      </ul>
+    </div>
   </div>
 </article>
 
@@ -183,12 +206,14 @@
     <img src="http://www.smuff.ro/wp-content/uploads/2012/02/scosche-backstage-ipad2-suport-auto-ipad.jpg" />
   </div>
   <div id="info">
-    <h2>Backstage Auto Ipod2</h2>
-    <ul id="shopping-info">
-      <li id="price">360 RON</a>
-      <li id="delivery">Livrare: 1-2 zile</a>
-      <li id="add-to-cart">Adauga la cos</li>
-    </ul>
+    <div id="inner">
+      <h2>Backstage Auto Ipod2</h2>
+      <ul id="shopping-info">
+        <li id="price">360 RON</a>
+        <li id="delivery">Livrare: 1-2 zile</a>
+        <li id="add-to-cart">Adauga la cos</li>
+      </ul>
+    </div>
   </div>
 </article>
 
@@ -198,12 +223,14 @@
     <img src="http://www.smuff.ro/wp-content/uploads/2012/03/magisso-cake-server-taietor-tort-cadouri-bucatarie-accesorii-smuff.jpg" />
   </div>
   <div id="info">
-    <h2>Magisso Taietor Pentru Tort</h2>
-    <ul id="shopping-info">
-      <li id="price">159 RON</a>
-      <li id="delivery">Livrare: 1-2 zile</a>
-      <li id="add-to-cart">Adauga la cos</li>
-    </ul>
+    <div id="inner">
+      <h2>Magisso Taietor Pentru Tort</h2>
+      <ul id="shopping-info">
+        <li id="price">159 RON</a>
+        <li id="delivery">Livrare: 1-2 zile</a>
+        <li id="add-to-cart">Adauga la cos</li>
+      </ul>
+    </div>
   </div>
 </article>
 
@@ -213,12 +240,14 @@
     <img src="http://www.smuff.ro/wp-content/uploads/2012/02/3m-proiector-camcorder-camera-de-buzunar-smuff.jpg" />
   </div>
   <div id="info">
-    <h2>3m Xc2</h2>
-    <ul id="shopping-info">
-      <li id="price">1780 RON</a>
-      <li id="delivery">Livrare: 1-2 zile</a>
-      <li id="add-to-cart">Adauga la cos</li>
-    </ul>
+    <div id="inner">
+      <h2>3m Xc2</h2>
+      <ul id="shopping-info">
+        <li id="price">1780 RON</a>
+        <li id="delivery">Livrare: 1-2 zile</a>
+        <li id="add-to-cart">Adauga la cos</li>
+      </ul>
+    </div>
   </div>
 </article>
 
@@ -228,12 +257,14 @@
     <img src="http://www.smuff.ro/wp-content/uploads/2012/02/animated-LED-Art-Cube-Light-smuff-romania.jpg" />
   </div>
   <div id="info">
-    <h2>Cub Animat Cu Leduri</h2>
-    <ul id="shopping-info">
-      <li id="price">590 RON</a>
-      <li id="delivery">Livrare: 5-7 zile</a>
-      <li id="add-to-cart">Adauga la cos</li>
-    </ul>
+    <div id="inner">
+      <h2>Cub Animat Cu Leduri</h2>
+      <ul id="shopping-info">
+        <li id="price">590 RON</a>
+        <li id="delivery">Livrare: 5-7 zile</a>
+        <li id="add-to-cart">Adauga la cos</li>
+      </ul>
+    </div>
   </div>
 </article>
 
@@ -243,12 +274,14 @@
     <img src="http://www.smuff.ro/wp-content/uploads/2012/02/turning-disk-binary-smuff.jpg" />
   </div>
   <div id="info">
-    <h2>Turning Disk</h2>
-    <ul id="shopping-info">
-      <li id="price">660 RON</a>
-      <li id="delivery">Livrare: 3-4 zile</a>
-      <li id="add-to-cart">Adauga la cos</li>
-    </ul>
+    <div id="inner">
+      <h2>Turning Disk</h2>
+      <ul id="shopping-info">
+        <li id="price">660 RON</a>
+        <li id="delivery">Livrare: 3-4 zile</a>
+        <li id="add-to-cart">Adauga la cos</li>
+      </ul>
+    </div>
   </div>
 </article>
 
@@ -258,12 +291,14 @@
     <img src="http://www.smuff.ro/wp-content/uploads/2012/02/Spinning-Wheel-binary-smuff.jpg" />
   </div>
   <div id="info">
-    <h2>Spinning Wheel</h2>
-    <ul id="shopping-info">
-      <li id="price">599 RON</a>
-      <li id="delivery">Livrare: 1-2 zile</a>
-      <li id="add-to-cart">Adauga la cos</li>
-    </ul>
+    <div id="inner">
+      <h2>Spinning Wheel</h2>
+      <ul id="shopping-info">
+        <li id="price">599 RON</a>
+        <li id="delivery">Livrare: 1-2 zile</a>
+        <li id="add-to-cart">Adauga la cos</li>
+      </ul>
+    </div>
   </div>
 </article>
 
@@ -280,12 +315,14 @@
     <img src="http://www.smuff.ro/wp-content/uploads/2012/03/smart-baby-monitor-wireless-iphone.jpg" />
   </div>
   <div id="info">
-    <h2>Baby Monitor</h2>
-    <ul id="shopping-info">
-      <li id="price">1485 RON</a>
-      <li id="delivery">Livrare: 1-2 zile</a>
-      <li id="add-to-cart">Adauga la cos</li>
-    </ul>
+    <div id="inner">
+      <h2>Baby Monitor</h2>
+      <ul id="shopping-info">
+        <li id="price">1485 RON</a>
+        <li id="delivery">Livrare: 1-2 zile</a>
+        <li id="add-to-cart">Adauga la cos</li>
+      </ul>
+    </div>
   </div>
 </article>
 
@@ -295,12 +332,14 @@
     <img src="http://www.smuff.ro/wp-content/uploads/2012/03/maxim-jug-scale-masuratoare-bucatarie-cadouri-smuff.jpg" />
   </div>
   <div id="info">
-    <h2>Maxim Jug</h2>
-    <ul id="shopping-info">
-      <li id="price">89 RON</a>
-      <li id="delivery">Livrare: 1-2 zile</a>
-      <li id="add-to-cart">Adauga la cos</li>
-    </ul>
+    <div id="inner">
+      <h2>Maxim Jug</h2>
+      <ul id="shopping-info">
+        <li id="price">89 RON</a>
+        <li id="delivery">Livrare: 1-2 zile</a>
+        <li id="add-to-cart">Adauga la cos</li>
+      </ul>
+    </div>
   </div>
 </article>
 
@@ -310,12 +349,14 @@
     <img src="http://www.smuff.ro/wp-content/uploads/2012/03/LaserPod-Original-Galaxy-smuff-magazin-cadouri-gadget.jpg" />
   </div>
   <div id="info">
-    <h2>Laserpod Original Galaxy</h2>
-    <ul id="shopping-info">
-      <li id="price">113 RON</a>
-      <li id="delivery">Livrare: 5-7 zile</a>
-      <li id="add-to-cart">Adauga la cos</li>
-    </ul>
+    <div id="inner">
+      <h2>Laserpod Original Galaxy</h2>
+      <ul id="shopping-info">
+        <li id="price">113 RON</a>
+        <li id="delivery">Livrare: 5-7 zile</a>
+        <li id="add-to-cart">Adauga la cos</li>
+      </ul>
+    </div>
   </div>
 </article>
 
@@ -325,12 +366,14 @@
     <img src="http://www.smuff.ro/wp-content/uploads/2012/02/scosche-backstage-ipad2-suport-auto-ipad.jpg" />
   </div>
   <div id="info">
-    <h2>Backstage Auto Ipod2</h2>
-    <ul id="shopping-info">
-      <li id="price">360 RON</a>
-      <li id="delivery">Livrare: 1-2 zile</a>
-      <li id="add-to-cart">Adauga la cos</li>
-    </ul>
+    <div id="inner">
+      <h2>Backstage Auto Ipod2</h2>
+      <ul id="shopping-info">
+        <li id="price">360 RON</a>
+        <li id="delivery">Livrare: 1-2 zile</a>
+        <li id="add-to-cart">Adauga la cos</li>
+      </ul>
+    </div>
   </div>
 </article>
 
@@ -340,12 +383,14 @@
     <img src="http://www.smuff.ro/wp-content/uploads/2012/03/magisso-cake-server-taietor-tort-cadouri-bucatarie-accesorii-smuff.jpg" />
   </div>
   <div id="info">
-    <h2>Magisso Taietor Pentru Tort</h2>
-    <ul id="shopping-info">
-      <li id="price">159 RON</a>
-      <li id="delivery">Livrare: 1-2 zile</a>
-      <li id="add-to-cart">Adauga la cos</li>
-    </ul>
+    <div id="inner">
+      <h2>Magisso Taietor Pentru Tort</h2>
+      <ul id="shopping-info">
+        <li id="price">159 RON</a>
+        <li id="delivery">Livrare: 1-2 zile</a>
+        <li id="add-to-cart">Adauga la cos</li>
+      </ul>
+    </div>
   </div>
 </article>
 
@@ -355,12 +400,14 @@
     <img src="http://www.smuff.ro/wp-content/uploads/2012/02/3m-proiector-camcorder-camera-de-buzunar-smuff.jpg" />
   </div>
   <div id="info">
-    <h2>3m Xc2</h2>
-    <ul id="shopping-info">
-      <li id="price">1780 RON</a>
-      <li id="delivery">Livrare: 1-2 zile</a>
-      <li id="add-to-cart">Adauga la cos</li>
-    </ul>
+    <div id="inner">
+      <h2>3m Xc2</h2>
+      <ul id="shopping-info">
+        <li id="price">1780 RON</a>
+        <li id="delivery">Livrare: 1-2 zile</a>
+        <li id="add-to-cart">Adauga la cos</li>
+      </ul>
+    </div>
   </div>
 </article>
 
@@ -370,12 +417,14 @@
     <img src="http://www.smuff.ro/wp-content/uploads/2012/02/animated-LED-Art-Cube-Light-smuff-romania.jpg" />
   </div>
   <div id="info">
-    <h2>Cub Animat Cu Leduri</h2>
-    <ul id="shopping-info">
-      <li id="price">590 RON</a>
-      <li id="delivery">Livrare: 5-7 zile</a>
-      <li id="add-to-cart">Adauga la cos</li>
-    </ul>
+    <div id="inner">
+      <h2>Cub Animat Cu Leduri</h2>
+      <ul id="shopping-info">
+        <li id="price">590 RON</a>
+        <li id="delivery">Livrare: 5-7 zile</a>
+        <li id="add-to-cart">Adauga la cos</li>
+      </ul>
+    </div>
   </div>
 </article>
 
@@ -385,12 +434,14 @@
     <img src="http://www.smuff.ro/wp-content/uploads/2012/02/turning-disk-binary-smuff.jpg" />
   </div>
   <div id="info">
-    <h2>Turning Disk</h2>
-    <ul id="shopping-info">
-      <li id="price">660 RON</a>
-      <li id="delivery">Livrare: 3-4 zile</a>
-      <li id="add-to-cart">Adauga la cos</li>
-    </ul>
+    <div id="inner">
+      <h2>Turning Disk</h2>
+      <ul id="shopping-info">
+        <li id="price">660 RON</a>
+        <li id="delivery">Livrare: 3-4 zile</a>
+        <li id="add-to-cart">Adauga la cos</li>
+      </ul>
+    </div>
   </div>
 </article>
 
@@ -400,12 +451,14 @@
     <img src="http://www.smuff.ro/wp-content/uploads/2012/02/Spinning-Wheel-binary-smuff.jpg" />
   </div>
   <div id="info">
-    <h2>Spinning Wheel</h2>
-    <ul id="shopping-info">
-      <li id="price">599 RON</a>
-      <li id="delivery">Livrare: 1-2 zile</a>
-      <li id="add-to-cart">Adauga la cos</li>
-    </ul>
+    <div id="inner">
+      <h2>Spinning Wheel</h2>
+      <ul id="shopping-info">
+        <li id="price">599 RON</a>
+        <li id="delivery">Livrare: 1-2 zile</a>
+        <li id="add-to-cart">Adauga la cos</li>
+      </ul>
+    </div>
   </div>
 </article>
 
@@ -415,18 +468,22 @@
     <img src="http://www.smuff.ro/wp-content/uploads/2012/02/grippy-pad.jpg" />
   </div>
   <div id="info">
-    <h2>Grippy Pad</h2>
-    <ul id="shopping-info">
-      <li id="price">48 RON</a>
-      <li id="delivery">Livrare: 1-2 zile</a>
-      <li id="add-to-cart">Adauga la cos</li>
-    </ul>
+    <div id="inner">
+      <h2>Grippy Pad</h2>
+      <ul id="shopping-info">
+        <li id="price">48 RON</a>
+        <li id="delivery">Livrare: 1-2 zile</a>
+        <li id="add-to-cart">Adauga la cos</li>
+      </ul>
+    </div>
   </div>
 </article>
 
 
 <div class="clear"></div>
 
+      </div>
+      
     </div>  
     <div class="clear"></div>
     

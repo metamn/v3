@@ -2,6 +2,8 @@
 */
 /* Transform the current font, make it Smuff style
 */
+/* Transform H1, H2, ..., all headings needed for Document Outline
+*/
 /* Columns / Grid
   - width: the width of the column in percentage
 */
@@ -21,61 +23,96 @@ body .container {
   margin: 0 auto; }
   body .container header {
     width: 100%;
-    float: left; }
-    body .container header hgroup {
+    float: left;
+    margin-bottom: 2.5em; }
+    body .container header #logo {
       width: 33%;
       float: left; }
-      body .container header hgroup h1 {
-        font-weight: bold;
-        letter-spacing: -4px;
-        font-size: 4em;
-        /* Traditional, overwritten */
-        padding: 0; }
+      body .container header #logo #image {
+        width: 25%;
+        float: left; }
+      body .container header #logo #title {
+        width: 75%;
+        float: left; }
+        body .container header #logo #title h1 {
+          font-weight: bold;
+          letter-spacing: -4px;
+          font-size: 4em;
+          /* Traditional, overwritten */
+          padding: .59em 0 0; }
+      body .container header #logo #strapline {
+        width: 100%;
+        float: left; }
     body .container header #search {
-      width: 33%;
+      width: 22%;
       float: left; }
+      body .container header #search h2 {
+        font-size: 100%; }
+      body .container header #search #searchform {
+        display: none; }
     body .container header #menu {
       width: 100%;
       float: left;
-      width: 33%;
+      width: 44%;
       float: left; }
       body .container header #menu #cart {
         width: 50%;
         float: left; }
+        body .container header #menu #cart h2 {
+          font-size: 100%; }
         body .container header #menu #cart ul {
           list-style: none;
-          margin: 0; }
+          margin: 0;
+          display: none; }
       body .container header #menu #information {
         width: 50%;
         float: left; }
+        body .container header #menu #information h2 {
+          font-size: 100%; }
         body .container header #menu #information ul {
           list-style: none;
-          margin: 0; }
-  body .container #content #sidebar {
-    width: 33%;
+          margin: 0;
+          display: none; }
+  body .container #content #sidebar-left {
+    width: 15%;
+    float: left;
+    margin-top: .625em; }
+    body .container #content #sidebar-left ul {
+      list-style: none;
+      margin: 0; }
+  body .container #content #sidebar-right {
+    width: 15%;
+    float: left;
+    margin-top: .625em;
+    float: right; }
+    body .container #content #sidebar-right ul {
+      list-style: none;
+      margin: 0; }
+  body .container #content #body {
+    width: 70%;
     float: left; }
 
 /* Product
 */
 #product.list {
-  width: 66%;
+  width: 100%;
   float: left;
-  float: right;
-  margin-bottom: 10em; }
+  margin-bottom: 5em; }
   #product.list #info {
-    width: 27%;
+    width: 33%;
     float: left; }
-    #product.list #info ul#shopping-info {
-      list-style: none;
-      margin: 0; }
+    #product.list #info #inner {
+      padding-left: 1.25em; }
+      #product.list #info #inner ul#shopping-info {
+        list-style: none;
+        margin: 0; }
   #product.list #image {
-    width: 73%;
+    width: 66%;
     float: left; }
 
 #product.grid {
-  width: 22%;
+  width: 33%;
   float: left;
-  float: right;
   height: 27em; }
   #product.grid #info {
     padding: 0 1.25em; }

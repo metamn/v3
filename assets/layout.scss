@@ -25,41 +25,80 @@ body {
     
     header {
       @include block;
-      hgroup {
+      margin-bottom: 2.5em;
+      #logo {
         @include col(33%);
-        h1 {
-          @include smuff-font;
-          font-size: 4em; /* Traditional, overwritten */
-          padding: 0;
-          
+        #image {
+          @include col(25%);
+        }
+        #title {
+          @include col(75%);
+          h1 {
+            @include smuff-font;
+            font-size: 4em; /* Traditional, overwritten */
+            padding: .59em 0 0;
+            
+          }
+        }
+        #strapline {
+          @include block;
         }
       }
       #search {
-        @include col(33%);
+        @include col(22%);
+        h2 {
+          @include normal-font;
+        }
+        #searchform {
+          display: none;
+        }
       }
       #menu {
         @include block;
-        @include col(33%);
+        @include col(44%);
         #cart {
           @include col(50%);
+          h2 {
+            @include normal-font;
+          }
           ul {
            @include ul-barebones; 
+           display: none;
           }
         }
         #information {
           @include col(50%);
+          h2 {
+            @include normal-font;
+          }
           ul {
-           @include ul-barebones; 
+            @include ul-barebones; 
+            display: none;
           }
         }
       }
     }
     
     #content {
-      #sidebar {
-        @include col(33%);
+      #sidebar-left {
+        @include col(15%);
+        margin-top: .625em;
+        ul {
+          @include ul-barebones; 
+        }
       }
+      #sidebar-right {
+        @include col(15%);
+        margin-top: .625em;
+        float: right;
+        ul {
+          @include ul-barebones; 
+        }
+      }
+      #body {
+        @include col(70%);
       
+      }
     }
   }
 }
@@ -69,25 +108,25 @@ body {
 */
 
 #product.list {
-  @include col(66%);
-  float: right;
-  margin-bottom: 10em;
+  @include block;
+  margin-bottom: 5em;
   
   #info {
-    @include col(27%);
-    ul#shopping-info {
-      @include ul-barebones; 
-    }
+    @include col(33%);
+    #inner {
+      padding-left: 1.25em;
+      ul#shopping-info {
+        @include ul-barebones; 
+      }
+    }    
   }
   #image {
-    @include col(73%);
+    @include col(66%);
   }
 }
 
 #product.grid {
-  @include col(22%);
-  float: right;
-  
+  @include col(33%);  
   height: 27em;
   
   #info {

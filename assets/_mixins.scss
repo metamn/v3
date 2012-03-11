@@ -5,6 +5,13 @@
   letter-spacing: -4px;
 }
 
+/* Transform H1, H2, ..., all headings needed for Document Outline
+*/
+@mixin normal-font {
+  font-size: 100%;
+}
+
+
 
 /* Columns / Grid
   - width: the width of the column in percentage
