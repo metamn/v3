@@ -54,38 +54,52 @@ body .container {
         width: 100%;
         float: left; }
     body .container header #search {
-      width: 22%;
+      width: 33%;
       float: left; }
       body .container header #search h2 {
         font-size: 100%;
-        cursor: pointer; }
-      body .container header #search #searchform {
-        display: none; }
+        visibility: hidden; }
+      body .container header #search #searchform input[name="search"] {
+        font-size: smaller;
+        width: 85%;
+        height: 2.5em; }
+      body .container header #search #searchform input[name="submit"] {
+        background: url("/assets/search.png") no-repeat center center #eeeeee;
+        width: 10%;
+        height: 2.5em; }
     body .container header #menu {
       width: 100%;
       float: left;
-      width: 44%;
+      width: 33%;
       float: left; }
       body .container header #menu #cart {
         width: 50%;
-        float: left; }
+        float: left;
+        text-align: center; }
         body .container header #menu #cart h2 {
           font-size: 100%;
-          cursor: pointer; }
+          visibility: hidden; }
         body .container header #menu #cart ul {
           list-style: none;
           margin: 0;
-          display: none; }
+          margin-top: .625em; }
+          body .container header #menu #cart ul li span {
+            position: relative;
+            top: -0.312em; }
       body .container header #menu #information {
         width: 50%;
-        float: left; }
+        float: left;
+        text-align: right; }
         body .container header #menu #information h2 {
           font-size: 100%;
-          cursor: pointer; }
+          visibility: hidden; }
         body .container header #menu #information ul {
           list-style: none;
           margin: 0;
-          display: none; }
+          margin-top: .625em; }
+          body .container header #menu #information ul li span {
+            position: relative;
+            top: -0.312em; }
   body .container #content #sidebar-left {
     width: 10%;
     float: left;
