@@ -110,26 +110,16 @@ body {
     }
     
     #content {
-      #sidebar-left {
+      #sidebar {
         @include col(10%);
-        margin-top: .625em;
-        ul {
-          @include ul-navigation; 
-        }
-      }
-      #sidebar-right {
-        @include col(10%);
-        margin-top: .625em;
         float: right;
+        margin-top: .625em;
         ul {
           @include ul-navigation; 
         }
-      }
+      }      
       #body {
         @include col(80%);
-        h1.first {
-          margin-left: 2.5em;
-        }
       }
     }
   }
@@ -147,8 +137,16 @@ body {
     @include col(33%);
     #inner {
       padding-left: 1.25em;
+      
+      h2 {
+        @include smuff-title-font;
+      }
       ul#shopping-info {
         @include ul-barebones; 
+        
+        #delivery {
+          margin: .625em 0 1.25em;
+        }
       }
     }    
   }
@@ -159,17 +157,25 @@ body {
 
 #product.grid {
   @include col(33%);  
-  height: 27em;
+  height: 30em;
   
   #info {
-    padding: 0 1.25em;
+    padding: 0 2.5em 0 0;
     text-align: center;
+    
+    h2 {
+      @include smuff-title-font;
+    }
     ul#shopping-info {
       @include ul-barebones; 
+      
+      #delivery {
+        margin: .625em 0 1.25em;
+      }
     }
   }
   #image {
-    padding: 0 1.25em;
+    padding: 0 2.5em 0 0;
   }
 }
 

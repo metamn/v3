@@ -10,6 +10,11 @@
   letter-spacing: -4px;
 }
 
+@mixin smuff-title-font {
+  font-weight: bold;
+  letter-spacing: -1.1px;
+}
+
 /* Transform H1, H2, ..., all headings needed for Document Outline
 */
 @mixin normal-font {

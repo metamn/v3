@@ -3,6 +3,7 @@
 
 $black: #000;
 $grey: #666;
+$green: lightgreen;
 
 
 #logo a, #logo a:visited {
@@ -29,4 +30,19 @@ nav {
     }
   }
 }
+
+#body h1 {
+  color: lighten($grey, 30%);
+}
+
+#product #price span {
+  border-radius: 30%;
+  padding: .3em .5em;
+  background: lighten($grey, 30%);
+}
+#product #add-to-cart span {
+  padding: .3em .5em;
+  background: $green;
+}
+
 

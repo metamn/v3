@@ -100,36 +100,22 @@ body .container {
           body .container header #menu #information ul li span {
             position: relative;
             top: -0.312em; }
-  body .container #content #sidebar-left {
+  body .container #content #sidebar {
     width: 10%;
     float: left;
+    float: right;
     margin-top: .625em; }
-    body .container #content #sidebar-left ul {
+    body .container #content #sidebar ul {
       list-style: none;
       margin: 0;
       font-size: smaller; }
-      body .container #content #sidebar-left ul li {
-        margin-bottom: .625em;
-        border-width: 0 0 1px 0;
-        border-style: inset; }
-  body .container #content #sidebar-right {
-    width: 10%;
-    float: left;
-    margin-top: .625em;
-    float: right; }
-    body .container #content #sidebar-right ul {
-      list-style: none;
-      margin: 0;
-      font-size: smaller; }
-      body .container #content #sidebar-right ul li {
+      body .container #content #sidebar ul li {
         margin-bottom: .625em;
         border-width: 0 0 1px 0;
         border-style: inset; }
   body .container #content #body {
     width: 80%;
     float: left; }
-    body .container #content #body h1.first {
-      margin-left: 2.5em; }
 
 /* Product
 */
@@ -142,9 +128,14 @@ body .container {
     float: left; }
     #product.list #info #inner {
       padding-left: 1.25em; }
+      #product.list #info #inner h2 {
+        font-weight: bold;
+        letter-spacing: -1.1px; }
       #product.list #info #inner ul#shopping-info {
         list-style: none;
         margin: 0; }
+        #product.list #info #inner ul#shopping-info #delivery {
+          margin: .625em 0 1.25em; }
   #product.list #image {
     width: 66%;
     float: left; }
@@ -152,12 +143,17 @@ body .container {
 #product.grid {
   width: 33%;
   float: left;
-  height: 27em; }
+  height: 30em; }
   #product.grid #info {
-    padding: 0 1.25em;
+    padding: 0 2.5em 0 0;
     text-align: center; }
+    #product.grid #info h2 {
+      font-weight: bold;
+      letter-spacing: -1.1px; }
     #product.grid #info ul#shopping-info {
       list-style: none;
       margin: 0; }
+      #product.grid #info ul#shopping-info #delivery {
+        margin: .625em 0 1.25em; }
   #product.grid #image {
-    padding: 0 1.25em; }
+    padding: 0 2.5em 0 0; }

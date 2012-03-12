@@ -12,3 +12,15 @@ nav ul li {
   nav ul li a:hover {
     color: #1a1a1a;
     text-decoration: none; }
+
+#body h1 {
+  color: #b3b3b3; }
+
+#product #price span {
+  border-radius: 30%;
+  padding: .3em .5em;
+  background: #b3b3b3; }
+
+#product #add-to-cart span {
+  padding: .3em .5em;
+  background: lightgreen; }
