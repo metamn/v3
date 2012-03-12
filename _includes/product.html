@@ -6,9 +6,14 @@
     <div id="inner">
       <h2>{{ post.title }}</h2>
       <ul id="shopping-info">
-        <li id="price"><span>{{ post.price }}</span> RON</a>
+        <li id="price">
+          <a class="button" href="/">
+            <span>{{ post.price }}</span> RON
+            &nbsp;&nbsp;
+            Adauga la cos
+          </a>
+        </li>
         <li id="delivery">Livrare: {{ post.delivery }} zile</a>
-        <li id="add-to-cart"><span>Adauga la cos</span></li>
       </ul>
     </div>
   </div>

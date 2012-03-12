@@ -8,6 +8,7 @@
 @mixin smuff-font {
   font-weight: bold;
   letter-spacing: -4px;
+  text-transform: none;
 }
 
 @mixin smuff-title-font {
@@ -15,7 +16,7 @@
   letter-spacing: -1.1px;
 }
 
-/* Transform H1, H2, ..., all headings needed for Document Outline
+/* Transform some headings needed only for Document Outline
 */
 @mixin normal-font {
   font-size: 100%;
@@ -55,7 +56,8 @@
   font-size: smaller;
   
   li {
-    margin-bottom: .625em;
+    margin-bottom: .5em;
+    padding-bottom: .125em;
     border-width: 0 0 1px 0;
     border-style: inset;
   }  

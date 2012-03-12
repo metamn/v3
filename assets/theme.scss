@@ -6,10 +6,21 @@ $grey: #666;
 $green: lightgreen;
 
 
-#logo a, #logo a:visited {
-  color: $black;
-  text-decoration: none;
+$bordo: #9E515C;
+$grey-background: #E7E7DF;
+
+
+body {
+  background: url("/assets/background.jpg") repeat scroll 0 0 #C8C8C6;
+  
+  header {
+    #logo a, #logo a:visited {
+      color: $black;
+      text-decoration: none;  
+    }
+  }
 }
+
 
 nav {
   ul {
@@ -31,18 +42,52 @@ nav {
   }
 }
 
-#body h1 {
-  color: lighten($grey, 30%);
+#body {
+  h1 {
+    color: $bordo;
+  }  
 }
 
-#product #price span {
-  border-radius: 30%;
-  padding: .3em .5em;
-  background: lighten($grey, 30%);
-}
-#product #add-to-cart span {
-  padding: .3em .5em;
-  background: $green;
+#product {
+  background: $grey-background;
+  #info {
+    #inner {
+      #shopping-info {
+        #delivery {
+          color: $grey;
+          font-size: smaller;
+        }
+      }
+    }
+  }
+  #image {
+    box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.698), 0 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1) inset;
+  } 
 }
 
+
+
+/* Forms */
+
+a.button {
+  -moz-box-shadow: 0 1px 0 0 #bddbef inset;
+  -webkit-box-shadow: 0 1px 0 0 #bddbef inset;
+  box-shadow: 0 1px 0 0 #bddbef inset;
+  background-color: #A2CCE9;
+  background: -moz-linear-gradient(center top , #A2CCE9 5%, #87bde3 100%) repeat scroll 0 0 #A2CCE9;
+  background: -webkit-linear-gradient(top, #A2CCE9, #87bde3) repeat scroll 0 0 #A2CCE9;
+  border: 1px solid #79b5df;
+  color: #4C4C4C !important;
+  text-decoration: none !important;
+  text-shadow: 1px 1px 0 #bddbef;
+  
+  border-radius: 6px 6px 6px 6px;
+  cursor: pointer;
+  padding: 0.55em;
+}
+a.button:hover {
+  background-color: #87bde3;
+  background: -moz-linear-gradient(center top , #87bde3 5%, #A2CCE9 100%) repeat scroll 0 0 #87bde3;
+  background: -webkit-linear-gradient(top, #87bde3, #A2CCE9) repeat scroll 0 0 #87bde3;
+}
 
