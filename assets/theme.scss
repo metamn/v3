@@ -11,7 +11,7 @@ $grey-background: #E7E7DF;
 
 
 body {
-  background: url("/assets/background.jpg") repeat scroll 0 0 #C8C8C6;
+  background: url("/assets/background.jpg") repeat scroll 0 0 $grey-background;
   
   header {
     #logo a, #logo a:visited {
