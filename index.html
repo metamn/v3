@@ -2,8 +2,18 @@
 layout: default
 ---
 
-<h1>Cadouri noi in magazin // grid view </h1>
 
+<h1>Cadouri noi in magazin // scrol view </h1>
+{% assign product-list-type = 'scroll' %}
+{% for post in site.posts limit:9 %}
+  {% include product.html %}
+{% endfor %}
+<div id="product-scroll-left" class="product-scroller">&lsaquo;</div>
+<div id="product-scroll-right" class="product-scroller">&rsaquo;</div>
+<div class="clear"></div>
+
+
+<h1>Cadouri noi in magazin // grid view </h1>
 {% assign product-list-type = 'grid' %}
 {% for post in site.posts limit:9 %}
   {% include product.html %}
@@ -12,9 +22,10 @@ layout: default
 
 
 <h1>Cadouri noi in magazin // list view </h1>
-
 {% assign product-list-type = 'list' %}
 {% for post in site.posts limit:10 %}
   {% include product.html %}
 {% endfor %}
 <div class="clear"></div>
+
+

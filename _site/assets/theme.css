@@ -26,6 +26,10 @@ nav ul li {
   #product #image {
     box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.698), 0 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1) inset; }
 
+#product.scroll #inner {
+  background: #e7e7df;
+  opacity: .9; }
+
 /* Forms */
 a.button {
   -moz-box-shadow: 0 1px 0 0 #bddbef inset;

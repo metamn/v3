@@ -134,6 +134,54 @@ body {
 /* Product
 */
 
+
+#product.scroll {
+  display: none;
+  
+  #info {
+    position: relative;
+    top: -12em;
+    height: 5em;
+    
+    #inner {
+      padding: 0 .312em;
+      width: 40%;
+      
+      h2 {
+        @include smuff-title-font;
+      }
+      ul#shopping-info {
+        @include ul-barebones; 
+        
+        #price {
+          width: 60%;        
+        }
+        #delivery {
+          margin: .625em 0 1.25em .312em;
+          padding-bottom: .625em;
+        }
+      }
+    }
+  }
+}
+#product.active {
+  display: block;
+}
+.product-scroller {
+  font-size: 4em;  
+  position: relative;
+  cursor: pointer;
+  width: 10%;
+}
+#product-scroll-left {
+  top: -7em;
+  left: 1%;
+}
+#product-scroll-right {
+  top: -8.24em;
+  left: 96%;
+}
+
 #product.list {
   @include block;
   margin-bottom: 5em;

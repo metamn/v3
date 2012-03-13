@@ -125,6 +125,44 @@ body .container {
 
 /* Product
 */
+#product.scroll {
+  display: none; }
+  #product.scroll #info {
+    position: relative;
+    top: -12em;
+    height: 5em; }
+    #product.scroll #info #inner {
+      padding: 0 .312em;
+      width: 40%; }
+      #product.scroll #info #inner h2 {
+        font-weight: bold;
+        letter-spacing: -1.1px; }
+      #product.scroll #info #inner ul#shopping-info {
+        list-style: none;
+        margin: 0; }
+        #product.scroll #info #inner ul#shopping-info #price {
+          width: 60%; }
+        #product.scroll #info #inner ul#shopping-info #delivery {
+          margin: .625em 0 1.25em .312em;
+          padding-bottom: .625em; }
+
+#product.active {
+  display: block; }
+
+.product-scroller {
+  font-size: 4em;
+  position: relative;
+  cursor: pointer;
+  width: 10%; }
+
+#product-scroll-left {
+  top: -7em;
+  left: 1%; }
+
+#product-scroll-right {
+  top: -8.24em;
+  left: 96%; }
+
 #product.list {
   width: 100%;
   float: left;
