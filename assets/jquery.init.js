@@ -3,6 +3,27 @@ jQuery.noConflict();
 jQuery(document).ready(function(){
   
   
+  // Category select dropdown list
+  jQuery(".select-box ul li").hide();
+  jQuery(".select-box ul li.active").show();
+  
+  // Show list items
+  jQuery(".select-box h2").click(function() {
+    jQuery(this).next().children().show();
+  }); 
+  
+  // Select list item
+  jQuery(".select-box ul li").click(function() {
+    jQuery(".select-box ul li").removeClass('active');
+    jQuery(this).addClass('active');
+    
+    // remove this when links will work and url will change
+    jQuery(".select-box ul li").hide();
+    jQuery(".select-box ul li.active").show();
+  });
+  
+  
+  
   // Product Scroll view
   jQuery("#product.scroll").first().addClass('active');
   

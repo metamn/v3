@@ -31,6 +31,7 @@ body {
     header {
       @include block;
       margin-bottom: 2.5em;
+      
       #logo {
         @include col(33%);
         #image {
@@ -111,10 +112,7 @@ body {
             }
           }
         }
-      }
-      #menu-products {
-        include @block;
-      }
+      }      
     }
     
     #content {
@@ -132,6 +130,36 @@ body {
     }
   }
 }
+
+
+/* Product select menu
+*/
+
+#menu-products {
+  @include block;
+  
+  .select-box {
+    @include col(33%);
+    cursor: pointer;
+    
+    h2:after {
+      content: '\2039';
+      font-size: 2em;
+      @include rotate(-90deg);
+      padding: .312em .312em .625em;
+    }
+    
+    ul {
+      @include ul-barebones;
+      
+      li {
+        display: block;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
 
 
 /* Product

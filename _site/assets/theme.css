@@ -1,34 +1,36 @@
+/* Typography
+================= 
+*/
+/* Transform the current font, make it Smuff style
+*/
+/* Transform some headings needed only for Document Outline
+*/
+/* Columns / Grid
+=================
+  
+  - width: the width of the column in percentage
+*/
+/* Other
+==================
+*/
+/* A barebones list
+*/
+/* Navigation list 
+*/
+/* Block
+*/
+/* Rotate
+- usage: rotate(190deg);
+*/
+/* Mixins
+*/
+/* General
+*/
 body {
   background: url("/assets/background.jpg") repeat scroll 0 0 #e7e7df; }
   body header #logo a, body header #logo a:visited {
     color: black;
     text-decoration: none; }
-
-nav ul li {
-  border-color: #e6e6e6; }
-  nav ul li a {
-    color: #666666;
-    text-decoration: none; }
-  nav ul li a:visited {
-    color: gray; }
-  nav ul li a:hover {
-    color: #1a1a1a;
-    text-decoration: none; }
-
-#body h1 {
-  color: #9e515c; }
-
-#product {
-  background: #e7e7df; }
-  #product #info #inner #shopping-info #delivery {
-    color: #666666;
-    font-size: smaller; }
-  #product #image {
-    box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.698), 0 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1) inset; }
-
-#product.scroll #inner {
-  background: #e7e7df;
-  opacity: .9; }
 
 /* Forms */
 a.button {
@@ -50,3 +52,44 @@ a.button:hover {
   background-color: #87bde3;
   background: -moz-linear-gradient(center top, #87bde3 5%, #a2cce9 100%) repeat scroll 0 0 #87bde3;
   background: -webkit-linear-gradient(top, #87bde3, #a2cce9) repeat scroll 0 0 #87bde3; }
+
+nav ul li {
+  border-color: #e6e6e6; }
+  nav ul li a {
+    color: #666666;
+    text-decoration: none; }
+  nav ul li a:visited {
+    color: gray; }
+  nav ul li a:hover {
+    color: #1a1a1a;
+    text-decoration: none; }
+
+#body h1 {
+  color: #9e515c; }
+
+/* Products
+*/
+#product {
+  background: #e7e7df; }
+  #product #info #inner #shopping-info #delivery {
+    color: #666666;
+    font-size: smaller; }
+  #product #image {
+    box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.698), 0 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1) inset; }
+
+#product.scroll #inner {
+  background: #e7e7df;
+  opacity: .9; }
+
+/* Product select box
+*/
+#menu-products .select-box h2:after {
+  color: #9e515c; }
+#menu-products .select-box ul li a {
+  color: black;
+  text-decoration: none; }
+#menu-products .select-box ul li.active {
+  font-weight: bold;
+  letter-spacing: -4px;
+  text-transform: none;
+  font-size: 3em; }

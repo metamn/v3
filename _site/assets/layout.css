@@ -1,0 +1,236 @@
+/* SASS structure: http://37signals.com/svn/posts/3003-css-taking-control-of-the-cascade
+*/
+/* Typography
+================= 
+*/
+/* Transform the current font, make it Smuff style
+*/
+/* Transform some headings needed only for Document Outline
+*/
+/* Columns / Grid
+=================
+  
+  - width: the width of the column in percentage
+*/
+/* Other
+==================
+*/
+/* A barebones list
+*/
+/* Navigation list 
+*/
+/* Block
+*/
+/* Rotate
+- usage: rotate(190deg);
+*/
+/* Typography 
+*/
+body {
+  font-family: Arial ,Helvetica, sans-serif; }
+
+h1, h2, h3 {
+  font-family: MuseoSans-500;
+  text-transform: uppercase; }
+
+/* Startpage 
+*/
+body .container {
+  width: 90%;
+  margin: 0 auto; }
+  body .container header {
+    width: 100%;
+    float: left;
+    margin-bottom: 2.5em; }
+    body .container header #logo {
+      width: 33%;
+      float: left; }
+      body .container header #logo #image {
+        width: 25%;
+        float: left; }
+      body .container header #logo #title {
+        width: 75%;
+        float: left; }
+        body .container header #logo #title h1 {
+          font-weight: bold;
+          letter-spacing: -4px;
+          text-transform: none;
+          font-size: 4em;
+          /* Traditional, overwritten */
+          padding: .59em 0 0; }
+      body .container header #logo #strapline {
+        width: 100%;
+        float: left; }
+    body .container header #search {
+      width: 33%;
+      float: left; }
+      body .container header #search h2 {
+        font-size: 100%;
+        visibility: hidden; }
+      body .container header #search #searchform input[name="search"] {
+        font-size: smaller;
+        width: 85%;
+        height: 2.5em; }
+      body .container header #search #searchform input[name="submit"] {
+        background: url("/assets/search.png") no-repeat center center #eeeeee;
+        width: 10%;
+        height: 2.5em; }
+    body .container header #menu {
+      width: 100%;
+      float: left;
+      width: 33%;
+      float: left; }
+      body .container header #menu #cart {
+        width: 50%;
+        float: left;
+        text-align: center; }
+        body .container header #menu #cart h2 {
+          font-size: 100%;
+          visibility: hidden; }
+        body .container header #menu #cart ul {
+          list-style: none;
+          margin: 0;
+          margin-top: .625em; }
+          body .container header #menu #cart ul li span {
+            position: relative;
+            top: -0.312em; }
+      body .container header #menu #information {
+        width: 50%;
+        float: left;
+        text-align: right; }
+        body .container header #menu #information h2 {
+          font-size: 100%;
+          visibility: hidden; }
+        body .container header #menu #information ul {
+          list-style: none;
+          margin: 0;
+          margin-top: .625em; }
+          body .container header #menu #information ul li span {
+            position: relative;
+            top: -0.312em; }
+  body .container #content #sidebar {
+    width: 10%;
+    float: left;
+    float: right;
+    margin-top: .625em; }
+    body .container #content #sidebar ul {
+      list-style: none;
+      margin: 0;
+      font-size: smaller; }
+      body .container #content #sidebar ul li {
+        margin-bottom: .5em;
+        padding-bottom: .125em;
+        border-width: 0 0 1px 0;
+        border-style: inset; }
+  body .container #content #body {
+    width: 80%;
+    float: left; }
+
+/* Product select menu
+*/
+#menu-products {
+  width: 100%;
+  float: left; }
+  #menu-products .select-box {
+    width: 33%;
+    float: left;
+    cursor: pointer; }
+    #menu-products .select-box h2:after {
+      content: '\2039';
+      font-size: 2em;
+      transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      padding: .312em .312em .625em; }
+    #menu-products .select-box ul {
+      list-style: none;
+      margin: 0; }
+      #menu-products .select-box ul li {
+        display: block;
+        cursor: pointer; }
+
+/* Product
+*/
+#product.scroll {
+  display: none; }
+  #product.scroll #info {
+    position: relative;
+    top: -12em;
+    height: 5em; }
+    #product.scroll #info #inner {
+      padding: 0 .312em;
+      width: 40%; }
+      #product.scroll #info #inner h2 {
+        font-weight: bold;
+        letter-spacing: -1.1px; }
+      #product.scroll #info #inner ul#shopping-info {
+        list-style: none;
+        margin: 0; }
+        #product.scroll #info #inner ul#shopping-info #price {
+          width: 60%; }
+        #product.scroll #info #inner ul#shopping-info #delivery {
+          margin: .625em 0 1.25em .312em;
+          padding-bottom: .625em; }
+
+#product.active {
+  display: block; }
+
+.product-scroller {
+  font-size: 4em;
+  position: relative;
+  cursor: pointer;
+  width: 10%; }
+
+#product-scroll-left {
+  top: -7em;
+  left: 1%; }
+
+#product-scroll-right {
+  top: -8.24em;
+  left: 96%; }
+
+#product.list {
+  width: 100%;
+  float: left;
+  margin-bottom: 5em; }
+  #product.list #info {
+    width: 33%;
+    float: left; }
+    #product.list #info #inner {
+      padding-left: 1.25em; }
+      #product.list #info #inner h2 {
+        font-weight: bold;
+        letter-spacing: -1.1px; }
+      #product.list #info #inner ul#shopping-info {
+        list-style: none;
+        margin: 0; }
+        #product.list #info #inner ul#shopping-info #price {
+          width: 80%; }
+        #product.list #info #inner ul#shopping-info #delivery {
+          margin: .625em 0 1.25em; }
+  #product.list #image {
+    width: 66%;
+    float: left; }
+
+#product.grid {
+  width: 33%;
+  float: left;
+  height: 30em; }
+  #product.grid #info {
+    margin: 0 2.5em 0 0;
+    text-align: center; }
+    #product.grid #info h2 {
+      font-weight: bold;
+      letter-spacing: -1.1px;
+      min-height: 2.5em; }
+    #product.grid #info ul#shopping-info {
+      list-style: none;
+      margin: 0; }
+      #product.grid #info ul#shopping-info #price {
+        width: 90%;
+        margin: 0 5%; }
+      #product.grid #info ul#shopping-info #delivery {
+        margin: .625em 0 1.25em; }
+  #product.grid #image {
+    margin: 0 2.5em 0 0; }

@@ -70,3 +70,14 @@
   float: left;
 }
 
+/* Rotate
+- usage: rotate(190deg);
+*/
+
+@mixin rotate($degree) {
+  transform: rotate($degree);
+  -webkit-transform: rotate($degree);
+  -o-transform: rotate($degree);
+  -moz-transform: rotate($degree);
+}
+
