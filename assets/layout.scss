@@ -20,7 +20,7 @@ h1, h2, h3 {
 }
 
 
-/* Startpage 
+/* Header 
 */
 
 body {
@@ -114,22 +114,27 @@ body {
         }
       }      
     }
-    
-    #content {
-      #sidebar {
-        @include col(10%);
-        float: right;
-        margin-top: .625em;
-        ul {
-          @include ul-navigation; 
-        }
-      }      
-      #body {
-        @include col(80%);
-      }
-    }
   }
 }
+
+
+/* Startpage
+*/
+
+#content {
+  #sidebar {
+    @include col(10%);
+    float: right;
+    margin-top: .625em;
+    ul {
+      @include ul-navigation; 
+    }
+  }      
+  #body {
+    @include col(80%);
+  }
+}
+
 
 
 /* Product select menu
@@ -145,7 +150,7 @@ body {
     h2:after {
       content: '\2039';
       font-size: 2em;
-      @include rotate(-90deg);
+      @include rotate(270deg, 1.2);
       padding: .312em .312em .625em;
     }
     

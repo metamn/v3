@@ -71,13 +71,15 @@
 }
 
 /* Rotate
-- usage: rotate(190deg);
+- usage: rotate(190deg, 1.6);
 */
 
-@mixin rotate($degree) {
+@mixin rotate($degree, $degree_ie) {
   transform: rotate($degree);
   -webkit-transform: rotate($degree);
   -o-transform: rotate($degree);
   -moz-transform: rotate($degree);
+  -ms-transform:rotate($degree);
+  filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=#degree_ie);
 }
 

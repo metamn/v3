@@ -22,7 +22,7 @@
 /* Block
 */
 /* Rotate
-- usage: rotate(190deg);
+- usage: rotate(190deg, 1.6);
 */
 /* Typography 
 */
@@ -33,7 +33,7 @@ h1, h2, h3 {
   font-family: MuseoSans-500;
   text-transform: uppercase; }
 
-/* Startpage 
+/* Header 
 */
 body .container {
   width: 90%;
@@ -108,23 +108,26 @@ body .container {
           body .container header #menu #information ul li span {
             position: relative;
             top: -0.312em; }
-  body .container #content #sidebar {
-    width: 10%;
-    float: left;
-    float: right;
-    margin-top: .625em; }
-    body .container #content #sidebar ul {
-      list-style: none;
-      margin: 0;
-      font-size: smaller; }
-      body .container #content #sidebar ul li {
-        margin-bottom: .5em;
-        padding-bottom: .125em;
-        border-width: 0 0 1px 0;
-        border-style: inset; }
-  body .container #content #body {
-    width: 80%;
-    float: left; }
+
+/* Startpage
+*/
+#content #sidebar {
+  width: 10%;
+  float: left;
+  float: right;
+  margin-top: .625em; }
+  #content #sidebar ul {
+    list-style: none;
+    margin: 0;
+    font-size: smaller; }
+    #content #sidebar ul li {
+      margin-bottom: .5em;
+      padding-bottom: .125em;
+      border-width: 0 0 1px 0;
+      border-style: inset; }
+#content #body {
+  width: 80%;
+  float: left; }
 
 /* Product select menu
 */
@@ -138,10 +141,12 @@ body .container {
     #menu-products .select-box h2:after {
       content: '\2039';
       font-size: 2em;
-      transform: rotate(-90deg);
-      -webkit-transform: rotate(-90deg);
-      -o-transform: rotate(-90deg);
-      -moz-transform: rotate(-90deg);
+      transform: rotate(270deg);
+      -webkit-transform: rotate(270deg);
+      -o-transform: rotate(270deg);
+      -moz-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=#degree_ie);
       padding: .312em .312em .625em; }
     #menu-products .select-box ul {
       list-style: none;
