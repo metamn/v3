@@ -171,7 +171,8 @@ body .container {
   width: 10%;
   float: left;
   float: right;
-  margin-top: .625em; }
+  position: fixed;
+  right: 5%; }
   #content #sidebar ul {
     list-style: none;
     margin: 0;

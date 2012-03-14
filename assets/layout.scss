@@ -190,7 +190,9 @@ body {
   #sidebar {
     @include col(10%);
     float: right;
-    margin-top: .625em;
+    position: fixed;
+    right: 5%;
+    
     ul {
       @include ul-navigation; 
     }
