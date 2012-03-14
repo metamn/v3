@@ -3,6 +3,24 @@ jQuery.noConflict();
 jQuery(document).ready(function(){
   
   
+  // Sticky header
+  jQuery(function(){
+    // Check the initial Poistion of the Sticky Header
+    var stickyHeaderTop = jQuery('#menu-products').offset().top;
+    
+    jQuery(window).scroll(function(){
+      if( jQuery(window).scrollTop() > stickyHeaderTop ) {
+        jQuery('#menu-products').css({position: 'fixed', top: '0px'});        
+        jQuery('#menu-products').addClass('fixed');
+      } else {
+        jQuery('#menu-products').css({position: 'static', top: '0px'});        
+        jQuery('#menu-products').removeClass('fixed');
+      }
+    });
+  });
+  
+  
+  
   // Category select dropdown list
   jQuery(".select-box ul li").hide();
   jQuery(".select-box ul li.active").show();

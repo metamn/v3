@@ -63,6 +63,21 @@
   }  
 }
 
+/* Inline List
+*/
+@mixin ul-inline {  
+  display: block;
+  margin: 0;
+
+  li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 0;
+    white-space: nowarp;  
+  }
+}
+
+
 /* Block
 */
 @mixin block {

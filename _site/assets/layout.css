@@ -19,6 +19,8 @@
 */
 /* Navigation list 
 */
+/* Inline List
+*/
 /* Block
 */
 /* Rotate
@@ -109,26 +111,6 @@ body .container {
             position: relative;
             top: -0.312em; }
 
-/* Startpage
-*/
-#content #sidebar {
-  width: 10%;
-  float: left;
-  float: right;
-  margin-top: .625em; }
-  #content #sidebar ul {
-    list-style: none;
-    margin: 0;
-    font-size: smaller; }
-    #content #sidebar ul li {
-      margin-bottom: .5em;
-      padding-bottom: .125em;
-      border-width: 0 0 1px 0;
-      border-style: inset; }
-#content #body {
-  width: 80%;
-  float: left; }
-
 /* Product select menu
 */
 #menu-products {
@@ -154,6 +136,54 @@ body .container {
       #menu-products .select-box ul li {
         display: block;
         cursor: pointer; }
+  #menu-products #info {
+    display: none; }
+
+#menu-products.fixed {
+  font-size: smaller;
+  padding: .312em;
+  z-index: 1; }
+  #menu-products.fixed .select-box {
+    width: 25%;
+    float: left; }
+    #menu-products.fixed .select-box h2 {
+      padding: 0; }
+    #menu-products.fixed .select-box ul li.active {
+      font-size: 2em;
+      font-weight: bold;
+      letter-spacing: -1.1px; }
+  #menu-products.fixed #info {
+    display: block; }
+    #menu-products.fixed #info ul {
+      display: block;
+      margin: 0; }
+      #menu-products.fixed #info ul li {
+        display: inline-block;
+        list-style-type: none;
+        margin-left: 0;
+        white-space: nowarp; }
+      #menu-products.fixed #info ul li {
+        display: inline-block !important; }
+
+/* Startpage
+*/
+#content #sidebar {
+  width: 10%;
+  float: left;
+  float: right;
+  margin-top: .625em; }
+  #content #sidebar ul {
+    list-style: none;
+    margin: 0;
+    font-size: smaller; }
+    #content #sidebar ul li {
+      margin-bottom: .5em;
+      padding-bottom: .125em;
+      border-width: 0 0 1px 0;
+      border-style: inset; }
+#content #body {
+  width: 80%;
+  float: left; }
 
 /* Product
 */

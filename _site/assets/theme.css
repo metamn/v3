@@ -17,6 +17,8 @@
 */
 /* Navigation list 
 */
+/* Inline List
+*/
 /* Block
 */
 /* Rotate
@@ -109,3 +111,6 @@ nav ul li.active:before {
   letter-spacing: -4px;
   text-transform: none;
   font-size: 3em; }
+
+#menu-products.fixed {
+  background: #e7e7df; }
