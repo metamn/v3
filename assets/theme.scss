@@ -14,6 +14,8 @@ $green: lightgreen;
 
 $bordo: #9E515C;
 $grey-background: #E7E7DF;
+$brown: #DFDDC9;
+$green: #C7D5BF;
 
 
 
@@ -172,5 +174,6 @@ nav {
 }
 
 #menu-products.fixed {
-  background: $grey-background;
+  background: $green;
+  box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.698), 0 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1) inset;
 }

@@ -113,4 +113,5 @@ nav ul li.active:before {
   font-size: 3em; }
 
 #menu-products.fixed {
-  background: #e7e7df; }
+  background: #c7d5bf;
+  box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.698), 0 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1) inset; }
