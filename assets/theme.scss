@@ -42,6 +42,12 @@ body {
       @include link-normal;  
     }
   }
+  
+  header.fixed {
+    background: url("/assets/background.jpg") repeat scroll 0 0 $grey-background;
+    box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.698), 0 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1) inset;
+  }
+  
 }
 
 /* Forms */
@@ -173,7 +179,4 @@ nav {
   }
 }
 
-#menu-products.fixed {
-  background: $green;
-  box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.698), 0 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1) inset;
-}
+

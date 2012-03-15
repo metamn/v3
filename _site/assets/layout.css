@@ -110,60 +110,70 @@ body .container {
           body .container header #menu #information ul li span {
             position: relative;
             top: -0.312em; }
-
-/* Product select menu
-*/
-#menu-products {
-  width: 100%;
-  float: left; }
-  #menu-products .select-box {
-    width: 33%;
-    float: left;
-    cursor: pointer; }
-    #menu-products .select-box h2:after {
-      content: '\2039';
-      font-size: 2em;
-      transform: rotate(270deg);
-      -webkit-transform: rotate(270deg);
-      -o-transform: rotate(270deg);
-      -moz-transform: rotate(270deg);
-      -ms-transform: rotate(270deg);
-      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=#degree_ie);
-      padding: .312em .312em .625em; }
-    #menu-products .select-box ul {
-      list-style: none;
-      margin: 0; }
-      #menu-products .select-box ul li {
-        display: block;
+    body .container header #menu-products {
+      width: 100%;
+      float: left; }
+      body .container header #menu-products .select-box {
+        width: 33%;
+        float: left;
         cursor: pointer; }
-  #menu-products #info {
-    display: none; }
-
-#menu-products.fixed {
-  font-size: smaller;
-  padding: .312em 1.25em 1.25em;
-  z-index: 1; }
-  #menu-products.fixed .select-box {
-    width: 25%;
-    float: left; }
-    #menu-products.fixed .select-box h2 {
-      padding: 0; }
-    #menu-products.fixed .select-box ul li.active {
-      font-size: 2em;
+        body .container header #menu-products .select-box h2:after {
+          content: '\2039';
+          font-size: 2em;
+          transform: rotate(270deg);
+          -webkit-transform: rotate(270deg);
+          -o-transform: rotate(270deg);
+          -moz-transform: rotate(270deg);
+          -ms-transform: rotate(270deg);
+          filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=#degree_ie);
+          padding: .312em .312em .625em; }
+        body .container header #menu-products .select-box ul {
+          list-style: none;
+          margin: 0; }
+          body .container header #menu-products .select-box ul li {
+            display: block;
+            cursor: pointer; }
+  body .container header.fixed {
+    height: 5em;
+    width: 90%; }
+    body .container header.fixed #logo #image {
+      width: 7%;
+      float: left;
+      margin: 0 1.5%; }
+    body .container header.fixed #logo #title h1 {
+      font-size: 100%;
       font-weight: bold;
       letter-spacing: -1.1px; }
-  #menu-products.fixed #info {
-    display: block; }
-    #menu-products.fixed #info ul {
-      display: block;
-      margin: 0; }
-      #menu-products.fixed #info ul li {
-        display: inline-block;
-        list-style-type: none;
-        margin-left: 0;
-        white-space: nowarp; }
-      #menu-products.fixed #info ul li {
-        display: inline-block !important; }
+    body .container header.fixed #logo #strapline {
+      display: none; }
+    body .container header.fixed #search {
+      visibility: hidden; }
+    body .container header.fixed #menu {
+      font-size: 100%; }
+      body .container header.fixed #menu h2 {
+        display: none; }
+      body .container header.fixed #menu #cart {
+        text-align: left;
+        width: 42%;
+        float: left; }
+      body .container header.fixed #menu #information {
+        text-align: left; }
+    body .container header.fixed #menu-products {
+      font-size: smaller;
+      width: 70%;
+      position: relative;
+      top: -8.5em;
+      left: 10%; }
+      body .container header.fixed #menu-products .select-box {
+        width: 25%;
+        float: left; }
+        body .container header.fixed #menu-products .select-box h2 {
+          padding: 0; }
+        body .container header.fixed #menu-products .select-box ul li.active {
+          font-size: 2em;
+          font-weight: bold;
+          letter-spacing: -1.1px;
+          width: 200%; }
 
 /* Startpage
 */

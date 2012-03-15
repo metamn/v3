@@ -6,15 +6,15 @@ jQuery(document).ready(function(){
   // Sticky header
   jQuery(function(){
     // Check the initial Poistion of the Sticky Header
-    var stickyHeaderTop = jQuery('#menu-products').offset().top;
+    var stickyHeaderTop = jQuery('header').offset().top;
     
     jQuery(window).scroll(function(){
       if( jQuery(window).scrollTop() > stickyHeaderTop ) {
-        jQuery('#menu-products').css({position: 'fixed', top: '0px'});        
-        jQuery('#menu-products').addClass('fixed');
+        jQuery('header').css({position: 'fixed', top: '0px'});        
+        jQuery('header').addClass('fixed');
       } else {
-        jQuery('#menu-products').css({position: 'static', top: '0px'});        
-        jQuery('#menu-products').removeClass('fixed');
+        jQuery('header').css({position: 'static', top: '0px'});        
+        jQuery('header').removeClass('fixed');
       }
     });
   });

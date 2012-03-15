@@ -112,74 +112,94 @@ body {
             }
           }
         }
+      }
+      #menu-products {
+        @include block;
+        
+        .select-box {
+          @include col(33%);
+          cursor: pointer;
+          
+          h2:after {
+            content: '\2039';
+            font-size: 2em;
+            @include rotate(270deg, 1.2);
+            padding: .312em .312em .625em;
+          }
+          
+          ul {
+            @include ul-barebones;
+            
+            li {
+              display: block;
+              cursor: pointer;
+            }
+          }
+        }                
       }      
     }
-  }
-}
-
-
-/* Product select menu
-*/
-
-#menu-products {
-  @include block;
-  
-  .select-box {
-    @include col(33%);
-    cursor: pointer;
-    
-    h2:after {
-      content: '\2039';
-      font-size: 2em;
-      @include rotate(270deg, 1.2);
-      padding: .312em .312em .625em;
-    }
-    
-    ul {
-      @include ul-barebones;
+    header.fixed {
+      height: 5em;
+      width: 90%;
       
-      li {
-        display: block;
-        cursor: pointer;
+      #logo {
+        #image {
+          @include col(7%);
+          margin: 0 1.5%;
+        }
+        #title {
+          h1 {
+            @include normal-font;
+            @include smuff-title-font;
+          }          
+        }
+        #strapline {
+          display: none;
+        }
+      }
+      #search {
+        visibility: hidden;        
+      }
+      #menu {
+        @include normal-font;
+        h2 {
+          display: none;
+        }
+        #cart {          
+          text-align: left;
+          @include col(42%);
+        }
+        #information {          
+          text-align: left;
+        }
+      }
+      #menu-products {
+        font-size: smaller;
+        width: 70%;
+        position: relative;
+        top: -8.5em;
+        left: 10%;
+        
+        .select-box {
+          @include col(25%);
+        
+          h2 {
+            padding: 0;
+          }
+          
+          ul {
+            li.active {
+              font-size: 2em;
+              @include smuff-title-font;
+              width: 200%;
+            }
+          }    
+        }      
       }
     }
-  }
-  
-  #info {
-    display: none;
   }
 }
-#menu-products.fixed {  
-  font-size: smaller;
-  padding: .312em 1.25em 1.25em;
-  z-index: 1;
-  
-  .select-box {
-    @include col(25%);
-  
-    h2 {
-      padding: 0;
-    }
-    
-    ul {
-      li.active {
-        font-size: 2em;
-        @include smuff-title-font;
-      }
-    }    
-  }
-  
-  #info {
-    display: block;
-    
-    ul {
-      @include ul-inline;
-      li {
-        display: inline-block !important;
-      }
-    }
-  }
-}
+
 
 
 
