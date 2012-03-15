@@ -141,6 +141,7 @@ body {
     header.fixed {
       height: 5em;
       width: 90%;
+      z-index: 1;
       
       #logo {
         #image {
@@ -206,7 +207,7 @@ body {
 /* Startpage
 */
 
-#content {
+#content {  
   #sidebar {
     @include col(10%);
     float: right;
@@ -221,7 +222,10 @@ body {
     @include col(80%);
   }
 }
-
+#content.fixed {
+  position: relative;
+  top: 15em;  
+}
 
 
 

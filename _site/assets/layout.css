@@ -135,7 +135,8 @@ body .container {
             cursor: pointer; }
   body .container header.fixed {
     height: 5em;
-    width: 90%; }
+    width: 90%;
+    z-index: 1; }
     body .container header.fixed #logo #image {
       width: 7%;
       float: left;
@@ -195,6 +196,10 @@ body .container {
 #content #body {
   width: 80%;
   float: left; }
+
+#content.fixed {
+  position: relative;
+  top: 15em; }
 
 /* Product
 */

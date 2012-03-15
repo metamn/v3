@@ -12,9 +12,11 @@ jQuery(document).ready(function(){
       if( jQuery(window).scrollTop() > stickyHeaderTop ) {
         jQuery('header').css({position: 'fixed', top: '0px'});        
         jQuery('header').addClass('fixed');
+        jQuery('#content').addClass('fixed');
       } else {
         jQuery('header').css({position: 'static', top: '0px'});        
         jQuery('header').removeClass('fixed');
+        jQuery('#content').removeClass('fixed');
       }
     });
   });
