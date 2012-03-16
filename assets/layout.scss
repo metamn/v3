@@ -230,8 +230,12 @@ body {
   #body {
     @include col(80%);
     
-    #subscribe-gift-service {
+    section {
+      margin-bottom: 5em;
       @include block;
+    }
+    
+    #subscribe-gift-service {
       padding: 1.25em;
       
       #call-for-action {
@@ -268,6 +272,23 @@ body {
 /* Product
 */
 
+
+#product.thumb {
+  @include col(18%);
+  margin-right: 2%;
+  
+  #info {
+    #inner {
+      h2 {
+        @include normal-font;
+      }
+      
+      #shopping-info {
+        display: none;
+      }
+    }
+  }
+}
 
 #product.scroll {
   display: none;

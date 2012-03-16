@@ -208,9 +208,11 @@ body .container {
 #content #body {
   width: 80%;
   float: left; }
-  #content #body #subscribe-gift-service {
+  #content #body section {
+    margin-bottom: 5em;
     width: 100%;
-    float: left;
+    float: left; }
+  #content #body #subscribe-gift-service {
     padding: 1.25em; }
     #content #body #subscribe-gift-service #call-for-action {
       margin-bottom: 1.25em; }
@@ -238,6 +240,15 @@ body .container {
 
 /* Product
 */
+#product.thumb {
+  width: 18%;
+  float: left;
+  margin-right: 2%; }
+  #product.thumb #info #inner h2 {
+    font-size: 100%; }
+  #product.thumb #info #inner #shopping-info {
+    display: none; }
+
 #product.scroll {
   display: none; }
   #product.scroll #info {

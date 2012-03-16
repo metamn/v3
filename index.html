@@ -3,7 +3,7 @@ layout: default
 ---
 
 <h2 class="hidden">Cadouri</h2><!-- this is a must to keep the document outline clean -->
-{% assign product-list-type = 'scroll' %}
+{% assign product-list-type = 'list' %}
 {% for post in site.posts limit:9 %}
   {% include product.html %}
 {% endfor %}
@@ -32,3 +32,21 @@ layout: default
     </ul>
   </form>
 </section>
+
+
+<section id="sales">
+  <h2>Promotii</h2>
+  {% assign product-list-type = 'thumb' %}
+  {% for post in site.posts limit:5 %}
+    {% include product.html %}
+  {% endfor %}
+</section>
+
+<section id="blog">
+  <h2>De pe blog</h2>
+  {% for post in site.posts limit:5 offset:5 %}
+    {% include product.html %}
+  {% endfor %}
+</section>
+
+
