@@ -2,14 +2,17 @@
 layout: default
 ---
 
-<h2 class="hidden">Cadouri</h2><!-- this is a must to keep the document outline clean -->
-{% assign product-list-type = 'list' %}
-{% for post in site.posts limit:9 %}
-  {% include product.html %}
-{% endfor %}
-<div id="product-scroll-left" class="product-scroller">&lsaquo;</div>
-<div id="product-scroll-right" class="product-scroller">&rsaquo;</div>
-<div class="clear"></div>
+<section id="products">
+  <h2 class="hidden">Cadouri</h2><!-- this is a must to keep the document outline clean -->
+  {% assign product-list-type = 'list' %}
+  {% for post in site.posts limit:9 %}
+    {% include product.html %}
+  {% endfor %}
+  <div id="product-scroll-left" class="product-scroller">&lsaquo;</div>
+  <div id="product-scroll-right" class="product-scroller">&rsaquo;</div>
+  <div class="clear"></div>
+</section>
+
 
 <section id="subscribe-gift-service">
   <h2 class="hidden">Servicii de cadouri</h2>
