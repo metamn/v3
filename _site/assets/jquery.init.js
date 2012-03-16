@@ -8,17 +8,17 @@ jQuery(document).ready(function(){
   function toggleScroll() {
     jQuery("#product-scroll-left").toggle();
     jQuery("#product-scroll-right").toggle();
-    jQuery("#body article").toggle();
+    jQuery("#products article").toggle();
   }
   
   jQuery("#navigation-icons li").click(function() {
     var klass = jQuery(this).attr('rel');
     
-    if (jQuery("#product").first().hasClass("scroll")) {
+    if (jQuery("#products #product").first().hasClass("scroll")) {
       toggleScroll();
     }
-    jQuery("#body article").removeClass("grid list scroll");
-    jQuery("#body article").addClass(klass);
+    jQuery("#products article").removeClass("grid list scroll");
+    jQuery("#products article").addClass(klass);
     if (klass == "scroll") {
       toggleScroll();
     }
