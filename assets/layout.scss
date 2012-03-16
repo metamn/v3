@@ -214,6 +214,15 @@ body {
     position: fixed;
     right: 5%;
     
+    ul#navigation-icons {
+      @include ul-inline;
+      font-family: 'WebSymbolsRegular', Arial, sans-serif;
+      
+      li {
+        margin-right: 1.25em;
+        cursor: pointer;
+      }
+    } 
     ul {
       @include ul-navigation; 
     }

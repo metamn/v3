@@ -3,6 +3,29 @@ jQuery.noConflict();
 jQuery(document).ready(function(){
   
   
+  // List, Grid, Scroll view for products
+  // Hide nav buttons for Scroll view
+  function toggleScroll() {
+    jQuery("#product-scroll-left").toggle();
+    jQuery("#product-scroll-right").toggle();
+    jQuery("#body article").toggle();
+  }
+  
+  jQuery("#navigation-icons li").click(function() {
+    var klass = jQuery(this).attr('rel');
+    
+    if (jQuery("#product").first().hasClass("scroll")) {
+      toggleScroll();
+    }
+    jQuery("#body article").removeClass("grid list scroll");
+    jQuery("#body article").addClass(klass);
+    if (klass == "scroll") {
+      toggleScroll();
+    }
+  });
+  
+  
+  
   // Sticky header
   jQuery(function(){
     // Check the initial Poistion of the Sticky Header

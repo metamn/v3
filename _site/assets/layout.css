@@ -184,6 +184,18 @@ body .container {
   float: right;
   position: fixed;
   right: 5%; }
+  #content #sidebar ul#navigation-icons {
+    display: block;
+    margin: 0;
+    font-family: 'WebSymbolsRegular', Arial, sans-serif; }
+    #content #sidebar ul#navigation-icons li {
+      display: inline-block;
+      list-style-type: none;
+      margin-left: 0;
+      white-space: nowarp; }
+    #content #sidebar ul#navigation-icons li {
+      margin-right: 1.25em;
+      cursor: pointer; }
   #content #sidebar ul {
     list-style: none;
     margin: 0;
