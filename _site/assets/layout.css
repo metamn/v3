@@ -208,6 +208,29 @@ body .container {
 #content #body {
   width: 80%;
   float: left; }
+  #content #body #subscribe-gift-service {
+    width: 100%;
+    float: left;
+    padding: 1.25em; }
+    #content #body #subscribe-gift-service #call-for-action {
+      margin-bottom: 1.25em; }
+    #content #body #subscribe-gift-service form ul {
+      display: block;
+      margin: 0; }
+      #content #body #subscribe-gift-service form ul li {
+        display: inline-block;
+        list-style-type: none;
+        margin-left: 0;
+        white-space: nowarp; }
+      #content #body #subscribe-gift-service form ul li#subscribe-now {
+        width: 30%;
+        float: left;
+        margin-right: 20%; }
+      #content #body #subscribe-gift-service form ul li#subscribe-email {
+        width: 50%;
+        float: left; }
+        #content #body #subscribe-gift-service form ul li#subscribe-email input[name="subscribe-later"] {
+          width: 94%; }
 
 #content.fixed {
   position: relative;

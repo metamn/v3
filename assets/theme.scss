@@ -118,11 +118,47 @@ nav {
   }
 }
 
+
+/* Header
+*/
+
+/* Product navigation menu
+*/
+
+#menu-products {
+  .select-box {
+    h2:after {
+      color: $bordo;
+    }
+    
+    ul {
+      li {
+        a {
+          @include link-normal;
+        }
+      }
+      li.active {
+        @include smuff-font;
+        font-size: 3em;
+      } 
+    }
+  }
+}
+
+
+/* Startpage 
+*/
+
 #body {
   h1 {
     color: $bordo;
+  }
+  
+  #subscribe-gift-service {
+    background: $brown;
   }  
 }
+
 
 
 /* Products
@@ -145,7 +181,6 @@ nav {
   } 
 }
 
-
 #product.scroll {
   #inner {
     background: $grey-background;
@@ -156,27 +191,5 @@ nav {
 
 
 
-/* Product select box
-*/
-
-#menu-products {
-  .select-box {
-    h2:after {
-      color: $bordo;
-    }
-    
-    ul {
-      li {
-        a {
-          @include link-normal;
-        }
-      }
-      li.active {
-        @include smuff-font;
-        font-size: 3em;
-      } 
-    }
-  }
-}
 
 

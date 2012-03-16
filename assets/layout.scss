@@ -229,6 +229,33 @@ body {
   }      
   #body {
     @include col(80%);
+    
+    #subscribe-gift-service {
+      @include block;
+      padding: 1.25em;
+      
+      #call-for-action {
+        margin-bottom: 1.25em;
+      }
+      
+      form {
+        ul {
+          @include ul-inline;
+          
+          li#subscribe-now {
+            @include col(30%);
+            margin-right: 20%;
+          }
+          li#subscribe-email {
+            @include col(50%);
+            
+            input[name="subscribe-later"] {
+              width: 94%;
+            }
+          }
+        }
+      }
+    }
   }
 }
 #content.fixed {

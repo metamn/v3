@@ -85,8 +85,27 @@ nav ul li.active:before {
   left: -12%;
   font-size: 3em; }
 
+/* Header
+*/
+/* Product navigation menu
+*/
+#menu-products .select-box h2:after {
+  color: #9e515c; }
+#menu-products .select-box ul li a {
+  color: black;
+  text-decoration: none; }
+#menu-products .select-box ul li.active {
+  font-weight: bold;
+  letter-spacing: -4px;
+  text-transform: none;
+  font-size: 3em; }
+
+/* Startpage 
+*/
 #body h1 {
   color: #9e515c; }
+#body #subscribe-gift-service {
+  background: #dfddc9; }
 
 /* Products
 */
@@ -101,16 +120,3 @@ nav ul li.active:before {
 #product.scroll #inner {
   background: #e7e7df;
   opacity: .9; }
-
-/* Product select box
-*/
-#menu-products .select-box h2:after {
-  color: #9e515c; }
-#menu-products .select-box ul li a {
-  color: black;
-  text-decoration: none; }
-#menu-products .select-box ul li.active {
-  font-weight: bold;
-  letter-spacing: -4px;
-  text-transform: none;
-  font-size: 3em; }
