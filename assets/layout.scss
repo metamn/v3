@@ -24,9 +24,18 @@ h1, h2, h3 {
 */
 
 body {
+  #background-image {
+    /*background: url(/assets/background-image.png);
+    width: 300px;
+    position: relative;
+    z-index: -2; */
+  }
   .container {
     width: 90%;
     margin: 0 auto;
+    /*position: relative;
+    z-index: 1;
+    top: -300px;*/
     
     header {
       @include block;

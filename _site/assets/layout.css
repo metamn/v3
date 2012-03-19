@@ -37,9 +37,17 @@ h1, h2, h3 {
 
 /* Header 
 */
+body #background-image {
+  /*background: url(/assets/background-image.png);
+  width: 300px;
+  position: relative;
+  z-index: -2; */ }
 body .container {
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  /*position: relative;
+  z-index: 1;
+  top: -300px;*/ }
   body .container header {
     width: 100%;
     float: left;

@@ -2,9 +2,10 @@
 layout: default
 ---
 
+
 <section id="products">
-  <h2 class="hidden">Cadouri</h2><!-- this is a must to keep the document outline clean -->
-  {% assign product-list-type = 'list' %}
+  <h2 class="hidden">Cadouri</h2>
+  {% assign product-list-type = 'scroll' %}
   {% for post in site.posts limit:9 %}
     {% include product.html %}
   {% endfor %}
