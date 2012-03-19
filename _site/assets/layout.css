@@ -57,12 +57,13 @@ body .container {
           font-weight: bold;
           letter-spacing: -4px;
           text-transform: none;
-          font-size: 4em;
+          font-size: 3em;
           /* Traditional, overwritten */
           padding: .59em 0 0; }
       body .container header #logo #strapline {
-        width: 100%;
-        float: left; }
+        width: 75%;
+        float: left;
+        font-size: smaller; }
     body .container header #search {
       width: 33%;
       float: left; }

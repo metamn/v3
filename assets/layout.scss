@@ -41,13 +41,14 @@ body {
           @include col(75%);
           h1 {
             @include smuff-font;
-            font-size: 4em; /* Traditional, overwritten */
+            font-size: 3em; /* Traditional, overwritten */
             padding: .59em 0 0;
             
           }
         }
         #strapline {
-          @include block;
+          @include col(75%);
+          font-size: smaller;
         }
       }
       #search {
