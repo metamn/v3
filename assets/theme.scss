@@ -126,12 +126,10 @@ nav {
 */
 
 #menu-products {
-  .select-box {
-    h2:after {
-      color: $bordo;
-    }
-    
+  .select-box { 
     ul {
+      background: $grey-background;
+      
       li {
         a {
           @include link-normal;
@@ -141,6 +139,21 @@ nav {
         @include smuff-font;
         font-size: 3em;
       } 
+    }
+  }
+  #gifts {
+    h2 {
+      background: #FF358B;
+    }
+  }
+  #holidays {
+    h2 {
+      background: #01B0F0;
+    }
+  }
+  #events {
+    h2 {
+      background: #AEEE00;
     }
   }
 }

@@ -84,7 +84,8 @@ body {
         @include col(33%);
         #cart {
           @include col(50%);
-          text-align: center;
+          text-align: right;
+          float: right;
        
           h2 {
             @include normal-font;
@@ -105,6 +106,7 @@ body {
         #information {
           @include col(50%);
           text-align: right;
+          float: right;
           
           h2 {
             @include normal-font;
@@ -127,9 +129,14 @@ body {
         @include block;
         
         .select-box {
-          @include col(33%);
-          cursor: pointer;
+          @include col(32.9%);
+          margin-right: .1%;
           
+          cursor: pointer;
+          h2 {
+            margin: 1.25em 0;
+            padding: 0 0 .312em .312em;
+          }
           h2:after {
             content: '\2039';
             font-size: 2em;
@@ -138,18 +145,22 @@ body {
           }
           
           ul {
-            @include ul-barebones;
+            @include ul-navigation;           
             
             li {
               display: block;
               cursor: pointer;
             }
           }
+        }
+        #events {
+          @include col(33%);
+          margin-right: 0;
         }                
       }      
     }
     header.fixed {
-      height: 5em;
+      height: 5.5em;
       width: 90%;
       z-index: 1;
       
@@ -176,12 +187,15 @@ body {
         h2 {
           display: none;
         }
-        #cart {          
-          text-align: left;
-          @include col(42%);
+        
+        #information {
+          span {
+            display: none;
+          }          
         }
-        #information {          
-          text-align: left;
+        
+        #cart {
+          width: 40%;
         }
       }
       #menu-products {
@@ -191,21 +205,23 @@ body {
         top: -8.5em;
         left: 10%;
         
-        .select-box {
-          @include col(25%);
-        
+        .select-box {          
           h2 {
-            padding: 0;
+            margin: 0 0 .312em;;
           }
           
           ul {
+            li {              
+              padding: .312em;
+            }
             li.active {
               font-size: 2em;
               @include smuff-title-font;
               width: 200%;
+              border-bottom: none;
             }
           }    
-        }      
+        }     
       }
     }
   }

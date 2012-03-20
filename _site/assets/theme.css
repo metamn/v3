@@ -89,16 +89,22 @@ nav ul li.active:before {
 */
 /* Product navigation menu
 */
-#menu-products .select-box h2:after {
-  color: #9e515c; }
-#menu-products .select-box ul li a {
-  color: black;
-  text-decoration: none; }
-#menu-products .select-box ul li.active {
-  font-weight: bold;
-  letter-spacing: -4px;
-  text-transform: none;
-  font-size: 3em; }
+#menu-products .select-box ul {
+  background: #e7e7df; }
+  #menu-products .select-box ul li a {
+    color: black;
+    text-decoration: none; }
+  #menu-products .select-box ul li.active {
+    font-weight: bold;
+    letter-spacing: -4px;
+    text-transform: none;
+    font-size: 3em; }
+#menu-products #gifts h2 {
+  background: #FF358B; }
+#menu-products #holidays h2 {
+  background: #01B0F0; }
+#menu-products #events h2 {
+  background: #AEEE00; }
 
 /* Startpage 
 */

@@ -94,7 +94,8 @@ body .container {
       body .container header #menu #cart {
         width: 50%;
         float: left;
-        text-align: center; }
+        text-align: right;
+        float: right; }
         body .container header #menu #cart h2 {
           font-size: 100%;
           visibility: hidden; }
@@ -108,7 +109,8 @@ body .container {
       body .container header #menu #information {
         width: 50%;
         float: left;
-        text-align: right; }
+        text-align: right;
+        float: right; }
         body .container header #menu #information h2 {
           font-size: 100%;
           visibility: hidden; }
@@ -123,9 +125,13 @@ body .container {
       width: 100%;
       float: left; }
       body .container header #menu-products .select-box {
-        width: 33%;
+        width: 32.9%;
         float: left;
+        margin-right: .1%;
         cursor: pointer; }
+        body .container header #menu-products .select-box h2 {
+          margin: 1.25em 0;
+          padding: 0 0 .312em .312em; }
         body .container header #menu-products .select-box h2:after {
           content: '\2039';
           font-size: 2em;
@@ -138,12 +144,22 @@ body .container {
           padding: .312em .312em .625em; }
         body .container header #menu-products .select-box ul {
           list-style: none;
-          margin: 0; }
+          margin: 0;
+          font-size: smaller; }
+          body .container header #menu-products .select-box ul li {
+            margin-bottom: .5em;
+            padding-bottom: .125em;
+            border-width: 0 0 1px 0;
+            border-style: inset; }
           body .container header #menu-products .select-box ul li {
             display: block;
             cursor: pointer; }
+      body .container header #menu-products #events {
+        width: 33%;
+        float: left;
+        margin-right: 0; }
   body .container header.fixed {
-    height: 5em;
+    height: 5.5em;
     width: 90%;
     z-index: 1; }
     body .container header.fixed #logo #image {
@@ -162,28 +178,26 @@ body .container {
       font-size: 100%; }
       body .container header.fixed #menu h2 {
         display: none; }
+      body .container header.fixed #menu #information span {
+        display: none; }
       body .container header.fixed #menu #cart {
-        text-align: left;
-        width: 42%;
-        float: left; }
-      body .container header.fixed #menu #information {
-        text-align: left; }
+        width: 40%; }
     body .container header.fixed #menu-products {
       font-size: smaller;
       width: 70%;
       position: relative;
       top: -8.5em;
       left: 10%; }
-      body .container header.fixed #menu-products .select-box {
-        width: 25%;
-        float: left; }
-        body .container header.fixed #menu-products .select-box h2 {
-          padding: 0; }
-        body .container header.fixed #menu-products .select-box ul li.active {
-          font-size: 2em;
-          font-weight: bold;
-          letter-spacing: -1.1px;
-          width: 200%; }
+      body .container header.fixed #menu-products .select-box h2 {
+        margin: 0 0 .312em; }
+      body .container header.fixed #menu-products .select-box ul li {
+        padding: .312em; }
+      body .container header.fixed #menu-products .select-box ul li.active {
+        font-size: 2em;
+        font-weight: bold;
+        letter-spacing: -1.1px;
+        width: 200%;
+        border-bottom: none; }
 
 /* Startpage
 */
