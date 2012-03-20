@@ -39,7 +39,7 @@ body {
     
     header {
       @include block;
-      margin-bottom: 2.5em;
+      margin-bottom: 1.25em;
       
       #logo {
         @include col(33%);
@@ -164,6 +164,10 @@ body {
       width: 90%;
       z-index: 1;
       
+      #banner {
+        display: none;
+      }
+      
       #logo {
         #image {
           @include col(7%);
@@ -232,6 +236,23 @@ body {
 
 /* Startpage
 */
+
+#banner {
+  @include col(100%);
+  background: url(/assets/spring.jpg) no-repeat white;
+  
+  height: 400px;
+  margin: 1.25em 0 0;
+  
+  text-align: center;
+  
+  h1, h2, h3, p {
+    @include smuff-title-font;
+    
+    margin-left: 40%;
+    width: 50%;
+  }
+}
 
 #content {  
   #sidebar {

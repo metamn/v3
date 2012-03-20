@@ -51,7 +51,7 @@ body .container {
   body .container header {
     width: 100%;
     float: left;
-    margin-bottom: 2.5em; }
+    margin-bottom: 1.25em; }
     body .container header #logo {
       width: 33%;
       float: left; }
@@ -162,6 +162,8 @@ body .container {
     height: 5.5em;
     width: 90%;
     z-index: 1; }
+    body .container header.fixed #banner {
+      display: none; }
     body .container header.fixed #logo #image {
       width: 7%;
       float: left;
@@ -201,6 +203,19 @@ body .container {
 
 /* Startpage
 */
+#banner {
+  width: 100%;
+  float: left;
+  background: url(/assets/spring.jpg) no-repeat white;
+  height: 400px;
+  margin: 1.25em 0 0;
+  text-align: center; }
+  #banner h1, #banner h2, #banner h3, #banner p {
+    font-weight: bold;
+    letter-spacing: -1.1px;
+    margin-left: 40%;
+    width: 50%; }
+
 #content #sidebar {
   width: 10%;
   float: left;
