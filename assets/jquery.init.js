@@ -19,6 +19,10 @@ jQuery(document).ready(function(){
     }
     jQuery("#products article").removeClass("grid list scroll");
     jQuery("#products article").addClass(klass);
+    
+    jQuery("#see-all-products").removeClass("grid list scroll");
+    jQuery("#see-all-products").addClass(klass);
+    
     if (klass == "scroll") {
       toggleScroll();
     }

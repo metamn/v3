@@ -217,17 +217,13 @@ body .container {
     width: 50%; }
 
 #content #sidebar {
-  width: 10%;
+  width: 16%;
   float: left;
-  float: right;
-  position: fixed;
-  right: 5%; }
-  #content #sidebar h2 {
-    display: none; }
+  margin-left: 4%;
+  float: right; }
   #content #sidebar ul#navigation-icons {
     display: block;
     margin: 0;
-    display: none;
     font-family: 'WebSymbolsRegular', Arial, sans-serif; }
     #content #sidebar ul#navigation-icons li {
       display: inline-block;
@@ -249,31 +245,56 @@ body .container {
 #content #body {
   width: 80%;
   float: left; }
-  #content #body section {
-    margin-bottom: 5em;
+  #content #body nav#products {
     width: 100%;
     float: left; }
-  #content #body #subscribe-gift-service {
-    padding: 1.25em; }
-    #content #body #subscribe-gift-service #call-for-action {
-      margin-bottom: 1.25em; }
-    #content #body #subscribe-gift-service form ul {
+    #content #body nav#products h2 {
+      display: none; }
+    #content #body nav#products ul {
       display: block;
       margin: 0; }
-      #content #body #subscribe-gift-service form ul li {
+      #content #body nav#products ul li {
         display: inline-block;
         list-style-type: none;
         margin-left: 0;
         white-space: nowarp; }
-      #content #body #subscribe-gift-service form ul li#subscribe-now {
-        width: 30%;
-        float: left;
-        margin-right: 20%; }
-      #content #body #subscribe-gift-service form ul li#subscribe-email {
-        width: 50%;
-        float: left; }
-        #content #body #subscribe-gift-service form ul li#subscribe-email input[name="subscribe-later"] {
-          width: 94%; }
+      #content #body nav#products ul li {
+        padding: .625em .312em; }
+  #content #body section {
+    margin-bottom: 5em;
+    width: 100%;
+    float: left; }
+  #content #body #subscribe-gift-service #image {
+    width: 33%;
+    float: left; }
+  #content #body #subscribe-gift-service #call-for-action {
+    width: 60%;
+    float: left;
+    margin: 0 3%;
+    float: right; }
+    #content #body #subscribe-gift-service #call-for-action form {
+      width: 100%;
+      float: left;
+      margin: 5em 0; }
+      #content #body #subscribe-gift-service #call-for-action form ul {
+        display: block;
+        margin: 0; }
+        #content #body #subscribe-gift-service #call-for-action form ul li {
+          display: inline-block;
+          list-style-type: none;
+          margin-left: 0;
+          white-space: nowarp; }
+        #content #body #subscribe-gift-service #call-for-action form ul li#subscribe-now {
+          width: 40%;
+          float: left;
+          margin-right: 10%; }
+        #content #body #subscribe-gift-service #call-for-action form ul li#subscribe-email {
+          width: 50%;
+          float: left; }
+          #content #body #subscribe-gift-service #call-for-action form ul li#subscribe-email input[name="subscribe-later"] {
+            width: 99%; }
+          #content #body #subscribe-gift-service #call-for-action form ul li#subscribe-email input[name="submit"] {
+            width: 100%; }
 
 #content.fixed {
   position: relative;
@@ -291,7 +312,8 @@ body .container {
     display: none; }
 
 #product.scroll {
-  display: none; }
+  display: none;
+  height: 40em; }
   #product.scroll #info {
     position: relative;
     top: -12em;
@@ -317,16 +339,23 @@ body .container {
 .product-scroller {
   font-size: 4em;
   position: relative;
+  top: -6em;
   cursor: pointer;
-  width: 10%; }
+  width: 10%;
+  height: 0; }
 
 #product-scroll-left {
-  top: -7em;
   left: 1%; }
 
 #product-scroll-right {
-  top: -8.24em;
   left: 96%; }
+
+#see-all-products.scroll {
+  position: relative;
+  top: -2.5em;
+  left: 90%;
+  width: 15%;
+  padding: 1.25em; }
 
 #product.list {
   width: 100%;
@@ -351,17 +380,40 @@ body .container {
     width: 66%;
     float: left; }
 
-#product.grid {
+#product.grid1 {
   width: 33%;
   float: left;
   height: 30em; }
+  #product.grid1 #info {
+    margin: 0 2.5em 0 0;
+    text-align: center; }
+    #product.grid1 #info h2 {
+      font-weight: bold;
+      letter-spacing: -1.1px;
+      min-height: 2.5em; }
+    #product.grid1 #info ul#shopping-info {
+      list-style: none;
+      margin: 0; }
+      #product.grid1 #info ul#shopping-info #price {
+        width: 90%;
+        margin: 0 5%; }
+      #product.grid1 #info ul#shopping-info #delivery {
+        margin: .625em 0 1.25em; }
+  #product.grid1 #image {
+    margin: 0 2.5em 0 0; }
+
+#product.grid {
+  width: 25%;
+  float: left;
+  height: 10em;
+  padding: 2.5em 0; }
   #product.grid #info {
+    display: none;
     margin: 0 2.5em 0 0;
     text-align: center; }
     #product.grid #info h2 {
       font-weight: bold;
-      letter-spacing: -1.1px;
-      min-height: 2.5em; }
+      letter-spacing: -1.1px; }
     #product.grid #info ul#shopping-info {
       list-style: none;
       margin: 0; }
@@ -372,3 +424,9 @@ body .container {
         margin: .625em 0 1.25em; }
   #product.grid #image {
     margin: 0 2.5em 0 0; }
+
+#see-all-products.grid {
+  width: 25%;
+  float: left;
+  height: 10em;
+  padding: 2.5em 0; }

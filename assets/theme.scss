@@ -94,27 +94,13 @@ nav {
       }
     }
     li.active {
-      background: $black;
-      padding: .312em !important;
+      background: $white;
       
-      a {
-        position: relative;
-        top: -.312em;
-        color: $white;
-      }
-      a:visited {
-        color: $white;
-      }
-      a:hover {
-        color: $white;
+      a, a:visited, a:hover {
+        color: $black;
       }
     }
-    li.active:before {
-      content: '\2666';
-      position: relative;
-      left: -12%;
-      font-size: 3em;
-    }
+    
   }
 }
 
@@ -199,6 +185,18 @@ nav {
     background: $grey-background;
     opacity: .9;
   }
+}
+
+#product.grid {
+  background: $white;
+  
+  #image {
+    box-shadow: none;
+  }
+}
+
+#see-all-products {
+  background: red;
 }
 
 

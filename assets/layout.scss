@@ -256,18 +256,12 @@ body {
 
 #content {  
   #sidebar {
-    @include col(10%);
+    @include col(16%);
+    margin-left: 4%;
     float: right;
-    position: fixed;
-    right: 5%;
-    
-    h2 {
-      display: none;
-    }
-    
+                
     ul#navigation-icons {      
       @include ul-inline;
-      display: none;
       font-family: 'WebSymbolsRegular', Arial, sans-serif;
       
       li {
@@ -282,35 +276,60 @@ body {
   #body {
     @include col(80%);
     
+    nav#products {
+      @include block;
+      
+      h2 {
+        display: none;
+      }
+      ul {
+        @include ul-inline;
+        li {
+          padding: .625em .312em;
+        }
+      }  
+    }
+    
     section {
       margin-bottom: 5em;
       @include block;
     }
     
-    #subscribe-gift-service {
-      padding: 1.25em;
+    #subscribe-gift-service {      
       
-      #call-for-action {
-        margin-bottom: 1.25em;
+      #image {
+        @include col(33%);
       }
+      #call-for-action {
+        @include col(60%);
+        margin: 0 3%;        
+        float: right;
       
-      form {
-        ul {
-          @include ul-inline;
+        form {
+          @include block;
+          margin: 5em 0;
           
-          li#subscribe-now {
-            @include col(30%);
-            margin-right: 20%;
-          }
-          li#subscribe-email {
-            @include col(50%);
+          ul {
+            @include ul-inline;
             
-            input[name="subscribe-later"] {
-              width: 94%;
+            li#subscribe-now {
+              @include col(40%);
+              margin-right: 10%;
+            }
+            li#subscribe-email {
+              @include col(50%);
+              
+              input[name="subscribe-later"] {
+                width: 99%;
+              }
+              input[name="submit"] {
+                width: 100%;
+              }
             }
           }
         }
-      }
+      
+      }      
     }
   }
 }
@@ -344,6 +363,7 @@ body {
 
 #product.scroll {
   display: none;
+  height: 40em;
   
   #info {
     position: relative;
@@ -377,16 +397,23 @@ body {
 .product-scroller {
   font-size: 4em;  
   position: relative;
+  top: -6em;
   cursor: pointer;
   width: 10%;
+  height: 0;
 }
 #product-scroll-left {
-  top: -7em;
   left: 1%;
 }
 #product-scroll-right {
-  top: -8.24em;
   left: 96%;
+}
+#see-all-products.scroll {
+  position: relative;
+  top: -2.5em;
+  left: 90%;
+  width: 15%;
+  padding: 1.25em;
 }
 
 #product.list {
@@ -418,7 +445,7 @@ body {
   }
 }
 
-#product.grid {
+#product.grid1 {
   @include col(33%);  
   height: 30em;
   
@@ -446,4 +473,42 @@ body {
     margin: 0 2.5em 0 0;
   }
 }
+
+#product.grid {
+  @include col(25%);  
+  height: 10em;
+  padding: 2.5em 0;
+  
+  #info {
+    display: none;
+    
+    margin: 0 2.5em 0 0;
+    text-align: center;
+    
+    h2 {
+      @include smuff-title-font;
+    }
+    ul#shopping-info {
+      @include ul-barebones; 
+      
+      #price {
+        width: 90%;
+        margin: 0 5%;
+      }
+      #delivery {
+        margin: .625em 0 1.25em;
+      }
+    }
+  }
+  #image {
+    margin: 0 2.5em 0 0;
+  }
+}
+#see-all-products.grid {
+  @include col(25%);  
+  height: 10em;
+  padding: 2.5em 0;
+  
+}
+
 

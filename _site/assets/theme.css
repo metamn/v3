@@ -69,21 +69,9 @@ nav ul li {
     color: #1a1a1a;
     text-decoration: none; }
 nav ul li.active {
-  background: black;
-  padding: .312em !important; }
-  nav ul li.active a {
-    position: relative;
-    top: -0.312em;
-    color: white; }
-  nav ul li.active a:visited {
-    color: white; }
-  nav ul li.active a:hover {
-    color: white; }
-nav ul li.active:before {
-  content: '\2666';
-  position: relative;
-  left: -12%;
-  font-size: 3em; }
+  background: white; }
+  nav ul li.active a, nav ul li.active a:visited, nav ul li.active a:hover {
+    color: black; }
 
 /* Header
 */
@@ -126,3 +114,11 @@ nav ul li.active:before {
 #product.scroll #inner {
   background: #e7e7df;
   opacity: .9; }
+
+#product.grid {
+  background: white; }
+  #product.grid #image {
+    box-shadow: none; }
+
+#see-all-products {
+  background: red; }
