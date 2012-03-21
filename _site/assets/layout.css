@@ -155,7 +155,7 @@ body .container {
             display: block;
             cursor: pointer; }
       body .container header #menu-products #events {
-        width: 33%;
+        width: 34%;
         float: left;
         margin-right: 0; }
   body .container header.fixed {
@@ -222,9 +222,12 @@ body .container {
   float: right;
   position: fixed;
   right: 5%; }
+  #content #sidebar h2 {
+    display: none; }
   #content #sidebar ul#navigation-icons {
     display: block;
     margin: 0;
+    display: none;
     font-family: 'WebSymbolsRegular', Arial, sans-serif; }
     #content #sidebar ul#navigation-icons li {
       display: inline-block;

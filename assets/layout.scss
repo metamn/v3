@@ -154,7 +154,7 @@ body {
           }
         }
         #events {
-          @include col(33%);
+          @include col(34%);
           margin-right: 0;
         }                
       }      
@@ -261,8 +261,13 @@ body {
     position: fixed;
     right: 5%;
     
-    ul#navigation-icons {
+    h2 {
+      display: none;
+    }
+    
+    ul#navigation-icons {      
       @include ul-inline;
+      display: none;
       font-family: 'WebSymbolsRegular', Arial, sans-serif;
       
       li {
