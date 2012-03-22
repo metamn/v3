@@ -180,7 +180,7 @@ nav {
   } 
 }
 
-#product.scroll {
+#product.scroll, #product.mixed {
   #inner {
     background: $grey-background;
     opacity: .9;
@@ -199,6 +199,11 @@ nav {
   background: red;
 }
 
+#product.thumbly-hover {
+  #image {
+    box-shadow: 0 10px 25px -10px rgba(120, 150, 210, 0.9), 0 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1) inset;
+  }
+}
 
 
 

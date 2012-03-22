@@ -2,6 +2,24 @@ jQuery.noConflict();
 
 jQuery(document).ready(function(){
   
+  // Mixed view for products
+  jQuery("#product.mixed").addClass('thumbly');
+  jQuery("#product.mixed").first().removeClass('thumbly');
+  jQuery("#product.mixed").first().addClass('holder');
+  
+  jQuery("#product.thumbly").hover(
+    function () {
+      jQuery(this).addClass('thumbly-hover');
+    }, 
+    function () {
+      jQuery(this).removeClass('thumbly-hover');
+    }
+  );
+  
+  jQuery("#product.thumbly").click(function() {
+    // to be done ...
+  });
+
   
   // List, Grid, Scroll view for products
   // Hide nav buttons for Scroll view

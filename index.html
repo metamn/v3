@@ -29,8 +29,8 @@ layout: default
 
 
 <section id="sales">
-  <h2>Promotii</h2>
-  {% assign product-list-type = 'thumb' %}
+  <h2>Wishlist</h2>
+  {% assign product-list-type = 'mixed' %}
   {% for post in site.posts limit:5 %}
     {% include product.html %}
   {% endfor %}

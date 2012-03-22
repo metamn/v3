@@ -302,6 +302,37 @@ body .container {
 
 /* Product
 */
+#product.mixed {
+  width: 58%;
+  float: left;
+  margin-right: 2%; }
+  #product.mixed #info {
+    position: relative;
+    top: -11.5em;
+    height: 5em;
+    font-size: smaller; }
+    #product.mixed #info #inner {
+      padding: 0 .312em;
+      width: 40%; }
+      #product.mixed #info #inner ul#shopping-info {
+        list-style: none;
+        margin: 0; }
+        #product.mixed #info #inner ul#shopping-info #price {
+          width: 90%; }
+        #product.mixed #info #inner ul#shopping-info #delivery {
+          margin: .625em 0 1.25em .312em;
+          padding-bottom: .625em; }
+
+#product.thumbly {
+  width: 18%;
+  float: left;
+  margin: 2.5% 2% 2% 0;
+  cursor: pointer; }
+  #product.thumbly #info #inner h2 {
+    font-size: 100%; }
+  #product.thumbly #info #inner #shopping-info {
+    display: none; }
+
 #product.thumb {
   width: 18%;
   float: left;

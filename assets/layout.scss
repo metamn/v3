@@ -344,6 +344,53 @@ body {
 */
 
 
+#product.mixed {
+  @include col(58%);
+  margin-right: 2%;
+  
+  #info {
+    position: relative;
+    top: -11.5em;
+    height: 5em;
+    font-size: smaller;
+    
+    #inner {
+      padding: 0 .312em;
+      width: 40%;
+      
+      
+      ul#shopping-info {
+        @include ul-barebones; 
+        
+        #price {
+          width: 90%;        
+        }
+        #delivery {
+          margin: .625em 0 1.25em .312em;
+          padding-bottom: .625em;
+        }
+      }
+    }
+  }
+}
+#product.thumbly {
+  @include col(18%);
+  margin: 2.5% 2% 2% 0;
+  cursor: pointer;
+  
+  #info {
+    #inner {
+      h2 {
+        @include normal-font;
+      }
+      
+      #shopping-info {
+        display: none;
+      }
+    }
+  }
+}
+
 #product.thumb {
   @include col(18%);
   margin-right: 2%;
