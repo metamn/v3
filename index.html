@@ -69,6 +69,7 @@ layout: default
 
 <section id="blog">
   <h2>In curand in magazin</h2>
+  {% assign product-list-type = 'thumb' %}
   {% for post in site.posts limit:5 offset:5 %}
     {% include product.html %}
   {% endfor %}
@@ -76,6 +77,7 @@ layout: default
 
 <section id="blog">
   <h2>De pe blog</h2>
+  {% assign product-list-type = 'thumb' %}
   {% for post in site.posts limit:5 %}
     {% include product.html %}
   {% endfor %}
